@@ -68,7 +68,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/technobaboo/stardustxr',
+              href: 'https://github.com/technobaboo/stardust-xr',
             },
           ],
         },
