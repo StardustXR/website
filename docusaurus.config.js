@@ -7,6 +7,7 @@ module.exports = {
   tagline: 'We Fight for the Users!',
   url: 'https://stardustxr.github.io',
   baseUrl: '/website/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
