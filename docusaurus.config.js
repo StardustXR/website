@@ -5,8 +5,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 module.exports = {
   title: 'Stardust XR',
   tagline: 'We Fight for the Users!',
-  url: 'https://stardustxr.github.io',
-  baseUrl: '/website/',
+  url: 'https://stardustxr.org',
+  baseUrl: '/',
   trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -20,7 +20,6 @@ module.exports = {
 		respectPrefersColorScheme: false,
 	},
     navbar: {
-      title: 'Stardust XR',
       logo: {
         alt: 'Stardust XR logo, a yellow astroid with smaller white astroids around it',
         src: 'img/icon.webp',
