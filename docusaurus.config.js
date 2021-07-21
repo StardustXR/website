@@ -6,12 +6,12 @@ module.exports = {
   title: 'Stardust XR',
   tagline: 'We Fight for the Users!',
   url: 'https://stardustxr.github.io',
-  baseUrl: '/',
+  baseUrl: '/website/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'StardustXR', // Usually your GitHub org/user name.
-  projectName: 'stardustxr.github.io', // Usually your repo name.
+  projectName: 'website', // Usually your repo name.
   themeConfig: {
 	colorMode: {
 		defaultMode: "dark",
@@ -68,7 +68,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/technobaboo/stardustxr',
             },
           ],
         },
