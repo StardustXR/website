@@ -46,7 +46,7 @@ module.exports = {
           items: [
             {
               label: 'Protocol',
-              to: '/docs/protocol/protocol',
+              to: '/docs/stardust-protocol/protocol',
             },
           ],
         },
