@@ -5,20 +5,20 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
 	{
 		title: 'Flexible',
-		image: '../../static/img/icon.gif',
+		image: '/img/icon.gif',
 		description: (
 			<>
 				Stardust allows you to make XR widgets or interfaces and run them among others.
+				You don&apos;t have to make a whole system UI, just a few pieces.
 			</>
 		),
 	},
 	{
-		title: 'Focus on What Matters',
-		image: '../../static/img/icon.gif',
+		title: 'Streamlined',
+		image: '/img/icon.gif',
 		description: (
 			<>
-				Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-				ahead and move your docs into the <code>docs</code> directory.
+				Stardust is made using <a href="https://stereokit.net">StereoKit</a>, which allows for a fast and lightweight display server.
 			</>
 		),
 	},

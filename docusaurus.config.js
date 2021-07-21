@@ -20,6 +20,7 @@ module.exports = {
 		respectPrefersColorScheme: false,
 	},
 		navbar: {
+			title: 'Stardust XR',
 			logo: {
 				alt: 'Stardust XR logo, a yellow astroid with smaller white astroids around it',
 				src: 'img/icon.webp',
