@@ -19,7 +19,6 @@ title: Roadmap
       - [x] Rounded box field
       - [x] Sphere field
     - [ ] Input
-      - [x] Input handler
       - [ ] Input methods
         - [x] Hand input
           - [ ] Creation from client
@@ -29,7 +28,7 @@ title: Roadmap
         - [x] Pointer input
           - [ ] Creation from client
           - [ ] Creation from OpenXR
-          - [x] Creation from StereoKit (flatscreen)
+          - [x] Creation from StereoKit (flatscreen, mouse cursor ray)
           - [x] Interaction with clients
         - [ ] Controller input
           - [ ] Creation from client
@@ -39,4 +38,7 @@ title: Roadmap
           - [ ] Creation from client
           - [ ] Creation from OpenXR
           - [ ] Interaction with clients
-    - [ ] test
+      - [x] Input handler
+    - [x] Environment
+      - [x] Set skytex
+      - [x] Set skylight
