@@ -33,6 +33,16 @@ module.exports = {
 					label: 'Docs',
 				},
 				{
+					href: 'https://twitter.com/stardustxr',
+					label: 'Twitter',
+					position: 'right',
+				},
+				{
+					href: 'https://discord.gg/qwxuwRrbP5',
+					label: 'Discord',
+					position: 'right',
+				},
+				{
 					href: 'https://github.com/technobaboo/stardust-xr',
 					label: 'GitHub',
 					position: 'right',
