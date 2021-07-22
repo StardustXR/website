@@ -4,41 +4,61 @@ title: Roadmap
 
 # Roadmap
 
+## MVP
+
 - [x] Core functionality
   - [x] IPC+RPC
   - [x] Protocol documentation
+- [x] Client
+  - [x] Fusion
+    - [x] Initial connection
+    - [x] Node type creation/destruction
+    - [x] Interface interaction
+    - [x] Callbacks
 - [ ] Server
   - [x] Per-client scenegraph
   - [x] Statically link StereoKit
   - [x] Basic features
-    - [x] Spatial parenting/spatial transformation
-    - [x] Model loading
-    - [x] Set model material parameters
+    - [x] Logic step
+    - [x] Spatial transforms
+      - [x] Absolute movement
+      - [x] Relative movement
+      - [x] Spatial parenting
+    - [x] Models
+      - [x] Loading
+      - [x] Setting material parameters
     - [x] Fields (SDFs for interaction)
       - [x] Box field
       - [x] Rounded box field
       - [x] Sphere field
-    - [ ] Input
-      - [ ] Input methods
+    - [x] Input
+      - [x] Input methods
         - [x] Hand input
-          - [ ] Creation from client
           - [x] Creation from OpenXR
           - [x] Creation from StereoKit (flatscreen)
           - [x] Interaction with clients
         - [x] Pointer input
-          - [ ] Creation from client
-          - [ ] Creation from OpenXR
           - [x] Creation from StereoKit (flatscreen, mouse cursor ray)
           - [x] Interaction with clients
-        - [ ] Controller input
-          - [ ] Creation from client
-          - [ ] Creation from OpenXR
-          - [ ] Interaction with clients
-        - [ ] Global input (e.g. volume buttons)
-          - [ ] Creation from client
-          - [ ] Creation from OpenXR
-          - [ ] Interaction with clients
       - [x] Input handler
+        - [x] Async input propagation through distance
     - [x] Environment
       - [x] Set skytex
       - [x] Set skylight
+    - [ ] Items
+      - [ ] Base item class
+      - [ ] Base item accepter class
+      - [ ] Environment equirectangular item
+      - [ ] Environment equirectangular accepter
+    - [ ] 2D integration
+      - [ ] Panels
+        - [ ] Panel item
+        - [ ] sk-wlroots (for Wayland)
+          - [x] Statically link wlroots
+          - [x] Rendering
+          - [ ] Input seats
+      - [ ] Panel shells
+        - [ ] Accept panel items
+        - [ ] Put surface on model material's texture
+        - [ ] Feed input through to panel
+        - [ ] Release panel items
