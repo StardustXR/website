@@ -5,6 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import Carousel from '../components/Carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 function HomepageHeader() {
 	const {siteConfig} = useDocusaurusContext();
@@ -34,6 +36,7 @@ export default function Home() {
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
+				<Carousel />
 			</main>
 		</Layout>
 	);

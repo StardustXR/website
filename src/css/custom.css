@@ -39,3 +39,8 @@ ul.contains-task-list {
 li.task-list-item > input[type="checkbox"] {
 	pointer-events: none;
 }
+
+.gallery {
+	margin: 0 auto;
+	max-width: 1250px;
+}
