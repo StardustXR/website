@@ -48,7 +48,7 @@ module.exports = {
 					position: 'right',
 				},
 				{
-					href: 'https://github.com/technobaboo/stardust-xr',
+					href: 'https://github.com/StardustXR/stardust-xr',
 					label: 'GitHub',
 					position: 'right',
 				},
@@ -96,11 +96,11 @@ module.exports = {
 					items: [
 						{
 							label: 'Stardust XR (Server)',
-							href: 'https://github.com/technobaboo/stardust-xr',
+							href: 'https://github.com/StardustXR/stardust-xr',
 						},
 						{
 							label: 'libstardustxr (includes Fusion)',
-							href: 'https://github.com/technobaboo/libstardustxr',
+							href: 'https://github.com/StardustXR/libstardustxr',
 						},
 					],
 				},
