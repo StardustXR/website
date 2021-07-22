@@ -27,7 +27,7 @@ module.exports = {
 			},
 			items: [
 				{
-					href: 'roadmap',
+					href: '/roadmap',
 					position: 'left',
 					label: 'Roadmap',
 				},
