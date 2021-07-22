@@ -15,10 +15,11 @@ const FeatureList = [
 	},
 	{
 		title: 'Streamlined',
-		image: '/img/icon.gif',
+		image: 'https://stereokit.net/img/StereoKitLogoLight.svg',
 		description: (
 			<>
 				Stardust is made using <a href="https://stereokit.net">StereoKit</a>, which allows for a fast and lightweight display server.
+				The compiled server binary is less than 10MB and uses ~50MB of RAM (varies depending on clients).
 			</>
 		),
 	},
