@@ -27,6 +27,11 @@ module.exports = {
 			},
 			items: [
 				{
+					href: 'roadmap',
+					position: 'left',
+					label: 'Roadmap',
+				},
+				{
 					type: 'doc',
 					docId: 'intro',
 					position: 'left',
