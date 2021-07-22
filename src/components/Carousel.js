@@ -24,7 +24,7 @@ function CarouselImage({image, alt, caption}) {
 }
 
 export default () => (
-	<Carousel autoPlay className="gallery">
+	<Carousel autoPlay infiniteLoop showThumbs={false} className="gallery">
 		{ImageList.map((props, idx) => (
 			<CarouselImage key={idx} {...props} />
 		))}
