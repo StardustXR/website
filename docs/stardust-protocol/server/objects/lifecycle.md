@@ -1,4 +1,5 @@
 # /lifecycle
+
 Object representing the life cycle of the Stardust server, from start to each frame to end.
 
 ## Signals
@@ -7,4 +8,4 @@ Executes `method` on object at `path` on the client when the main logic loop of 
 
 `method` must have arguments of `(double delta, double timeToRender)`. 
 
-`delta` gives the time in seconds between the current time and the last time the logic loop executed while `timeToRender` gives the time in ms since epoch when the current frame is expected to reach the user's eyes.
+`delta` gives the time in seconds between the current time and the last time the logic loop executed while `timeToRender` gives the time in ms since epoch when the current frame is expected to reach the user's eyes (returns 0 for now).

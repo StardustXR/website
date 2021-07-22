@@ -1,5 +1,7 @@
 # /environment
 
+Interface managing the skytex and skylight (equivalent of desktop background).
+
 ## Signals
 ### `visible(bool enable)`
 Enable or disables the skybox visibility (lighting remains active). This is not meant to be used for an additive AR mode as StereoKit will perform that when the OpenXR runtime indicates the layer's blend mode is additive.
