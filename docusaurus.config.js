@@ -61,6 +61,10 @@ module.exports = {
 					title: 'Docs',
 					items: [
 						{
+							label: 'Roadmap',
+							href: 'roadmap',
+						},
+						{
 							label: 'Protocol',
 							to: '/docs/stardust-protocol/protocol',
 						},
@@ -77,14 +81,22 @@ module.exports = {
 							label: 'Twitter',
 							href: 'https://twitter.com/stardustxr',
 						},
+						{
+							label: 'Stardust XR (GitHub)',
+							href: 'https://github.com/StardustXR',
+						},
 					],
 				},
 				{
-					title: 'More',
+					title: 'Code',
 					items: [
 						{
-							label: 'GitHub',
+							label: 'Stardust XR (Server)',
 							href: 'https://github.com/technobaboo/stardust-xr',
+						},
+						{
+							label: 'libstardustxr (includes Fusion)',
+							href: 'https://github.com/technobaboo/libstardustxr',
 						},
 					],
 				},
