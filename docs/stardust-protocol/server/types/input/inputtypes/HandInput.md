@@ -1,5 +1,5 @@
 # HandInput
-### Derived from [[InputMethod]] and [[Spatial]] (`scalable: false`)
+### Derived from [InputMethod](../InputMethod)
 
 A full 27-bone hand+forearm input with useful abstractions provided through the datamap.
 

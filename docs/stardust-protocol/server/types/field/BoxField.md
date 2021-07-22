@@ -1,5 +1,6 @@
 # BoxField
-Derived from [[Field]], this Field is in a rectangular prism shape.
+### Derived from [Field](Field)
+This field is in a rectangular prism shape.
 
 ## Properties
 ### `setSize(Vector3 size)`

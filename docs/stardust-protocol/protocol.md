@@ -3,8 +3,9 @@ sidebar_position: 1
 ---
 
 # Protocol
+
 ## Data
-Every message uses flatbuffers and most use flexbuffers to add variant data such as method arguments and return values. The flatbuffers Message type is:
+Every message uses [flatbuffers](https://google.github.io/flatbuffers/) and [flexbuffers](https://google.github.io/flatbuffers/flexbuffers.html) to add variant data such as method arguments and return values. The Stardust XR Message schema is:
 
 ```cpp
 namespace StardustXR;
@@ -23,7 +24,9 @@ root_type Message;
 
 ## Message Types
 All fields not accounted for are assumed to be not included or `0` or `""`
+
 ### Error
+
 | Field Name | Value |
 |-:|:-|
 | `type` | `0` |
@@ -35,6 +38,7 @@ All fields not accounted for are assumed to be not included or `0` or `""`
 
 ### Signal
 Signals are method calls that do not expect a response of any kind.
+
 | Field Name | Value |
 |-:|:-|
 | `type` | `1` |
@@ -43,7 +47,8 @@ Signals are method calls that do not expect a response of any kind.
 | `data` | Flexbuffer containing arguments to pass to remote method |
 
 ### Method Call
-Method calls allow for remote procedure calling and should block the thread they are sent from until a response is heard.
+Method calls allow for remote procedure calling.
+
 | Field Name | Value |
 |-:|:-|
 | `type` | `2` |
@@ -54,6 +59,7 @@ Method calls allow for remote procedure calling and should block the thread they
 
 ### Method Return
 Message to pass the return value back to the program.
+
 | Field Name | Value |
 |-:|:-|
 | `type` | `3` |

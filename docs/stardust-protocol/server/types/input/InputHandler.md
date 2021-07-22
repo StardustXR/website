@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 # InputHandler
-## Derived from [[Spatial]] (`scalable: false`)
+## Derived from [Spatial](../Spatial) (`scalable: false`)
 
 A handler to allow clients to recieve input.
 

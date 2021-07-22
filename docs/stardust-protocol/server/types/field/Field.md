@@ -1,6 +1,6 @@
 # Field
-### Derived from [[Spatial]]
-Type that contains methods all Fields share. All fields created are under  `/field`.
+### Derived from [Spatial](../Spatial)
+Type that contains methods all Fields share. All fields created are under  `/field`. See [/field](../../objects/field.md) for the field factory.
 
 ## Methods
 ### `double distance(string spacePath, Vector3 point)`

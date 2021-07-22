@@ -1,5 +1,6 @@
 # SphereField
-Derived from [[Field]], this Field is in a sphere shape.
+### Derived from [Field](Field)
+This Field is in a sphere shape.
 
 ## Properties
 ### `setRadius(double size)`

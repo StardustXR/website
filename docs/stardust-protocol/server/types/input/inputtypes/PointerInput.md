@@ -1,7 +1,7 @@
 # PointerInput
-### Derived from [[InputMethod]]
+### Derived from [InputMethod](../InputMethod)
 
-An input method for pointers, such as the Huawei VR Glass's remote, a pointer put on an Index controller, Oculus style laser mouse, etc.
+An input method for pointers, such as the Daydream's remote, a pointer put on an Index controller, Oculus style laser mouse, and your desktop's mouse in flatscreen.
 
 The local space for a pointer is where +Z is along the pointer's direction, +X is to the right of the pointer when laying face up, and +Y is upward when laying face up.
 

@@ -3,7 +3,7 @@ sidebar_position: 3
 ---
 
 # Model
-### Derived from [[Spatial]]
+### Derived from [Spatial](Spatial)
 A graphical model.
 
 ## Properties
