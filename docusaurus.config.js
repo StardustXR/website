@@ -14,11 +14,11 @@ module.exports = {
 	organizationName: 'StardustXR', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
-	colorMode: {
-		defaultMode: "dark",
-		disableSwitch: false,
-		respectPrefersColorScheme: false,
-	},
+		colorMode: {
+			defaultMode: "dark",
+			disableSwitch: true,
+			respectPrefersColorScheme: false,
+		},
 		navbar: {
 			title: 'Stardust XR',
 			logo: {
