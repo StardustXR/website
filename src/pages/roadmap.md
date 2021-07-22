@@ -4,7 +4,7 @@ title: Roadmap
 
 # Roadmap
 
-## MVP
+## 1.0 (Minimum Viable Product)
 
 - [x] Core functionality
   - [x] IPC+RPC
