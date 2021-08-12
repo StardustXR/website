@@ -9,7 +9,7 @@ Stardust officially works on Linux distributions, it may work on BSD/Fuchsia but
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
 ### Packages
-AUR: `libstardustxr` and `libstardustxr-fusion`
+AUR: `libstardustxr-git` and `libstardustxr-fusion-git`
 
 ### Build system
 1. Meson >= 0.55.0
@@ -39,7 +39,7 @@ ninja install
 ## [stardust-xr](https://github.com/StardustXR/stardust-xr) (reference server)
 
 ### Packages
-AUR: `stardust-xr`
+AUR: `stardust-xr-git`
 
 ### Build system
 1. Meson >= 0.55.0
