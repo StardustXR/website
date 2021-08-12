@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const ImageList = [
 	{
-		image: "https://pbs.twimg.com/media/E6HnwU1WYAQUATa.jpg:large",
+		image: "img/carousel/multipleclients.jpg",
 		alt: "A scene showing multiple widgets, including sliders like an equalizer and a virtual touchscreen.",
 		caption: "Multiple objects working independently all at once.",
 	},
