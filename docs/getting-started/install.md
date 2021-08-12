@@ -6,6 +6,9 @@ sidebar_position: 2
 
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
+### Packages
+AUR: `libstardustxr` and `libstardustxr-fusion`
+
 ### Build system
 1. Meson >= 0.55.0
 2. Ninja (tested on 1.10.2)
@@ -32,6 +35,9 @@ ninja install
 ```
 
 ## [stardust-xr](https://github.com/StardustXR/stardust-xr) (reference server)
+
+### Packages
+AUR: `stardust-xr`
 
 ### Build system
 1. Meson >= 0.55.0
