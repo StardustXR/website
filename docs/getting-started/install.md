@@ -35,12 +35,13 @@ ninja install
 1. Meson >= 0.55.0
 2. Ninja
 3. CMake
-4. Flatbuffers >= 1.12.0
-5. EGL+GLES 3.2
-6. GLX+Xlib
-7. fontconfig
-8. dlopen
-9. OpenXR Loader (required even if run in flatscreen mode)
+4. [libstardustxr](#libstardustxr-server-client-and-fusion)
+5. Flatbuffers >= 1.12.0
+6. EGL+GLES 3.2
+7. GLX+Xlib
+8. fontconfig
+9. dlopen
+10. OpenXR Loader (required even if run in flatscreen mode)
 
 ### Download
 ```bash
