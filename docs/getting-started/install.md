@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Installation
 
+Stardust officially works on Linux distributions, it may work on BSD/Fuchsia but that support is not guaranteed. Windows/macOS support is not planned at this time.
+
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
 ### Packages
