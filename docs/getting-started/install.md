@@ -6,10 +6,12 @@ sidebar_position: 2
 
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
-### Prerequisites
-1. Meson
-2. Ninja
-3. Flatbuffers >= 1.12.0
+### Build system
+1. Meson >= 0.55.0
+2. Ninja (tested on 1.10.2)
+
+### Build dependencies
+1. Flatbuffers >= 1.12.0
 
 ### Download
 ```bash
@@ -31,17 +33,19 @@ ninja install
 
 ## [stardust-xr](https://github.com/StardustXR/stardust-xr) (reference server)
 
-### Prerequisites
+### Build system
 1. Meson >= 0.55.0
-2. Ninja
-3. CMake
-4. [libstardustxr](#libstardustxr-server-client-and-fusion)
-5. Flatbuffers >= 1.12.0
-6. EGL+GLES 3.2
-7. GLX+Xlib
-8. fontconfig
-9. dlopen
-10. OpenXR Loader (required even if run in flatscreen mode)
+2. Ninja (tested on 1.10.2)
+3. CMake (tested on 3.21.1)
+
+### Build dependencies
+1. [libstardustxr](#libstardustxr-server-client-and-fusion)
+2. Flatbuffers >= 1.12.0
+3. EGL+GLES 3.2
+4. GLX+Xlib
+5. fontconfig
+6. dlopen
+7. OpenXR Loader (required even if run in flatscreen mode)
 
 ### Download
 ```bash
