@@ -18,8 +18,8 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/stardust-protocol/protocol">
-						Protocol API Reference
+						to="/docs/getting-started/overview">
+						Get Started
 					</Link>
 				</div>
 			</div>

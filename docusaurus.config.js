@@ -33,7 +33,7 @@ module.exports = {
 				},
 				{
 					type: 'doc',
-					docId: 'overview',
+					docId: 'getting-started/overview',
 					position: 'left',
 					label: 'Docs',
 				},
@@ -65,8 +65,8 @@ module.exports = {
 							href: 'roadmap',
 						},
 						{
-							label: 'Overview',
-							to: '/docs/overview',
+							label: 'Getting Started',
+							to: '/docs/getting-started/overview',
 						},
 						{
 							label: 'Protocol',
