@@ -19,7 +19,7 @@ const FeatureList = [
 		description: (
 			<>
 				Stardust is made using <a href="https://stereokit.net">StereoKit</a>, an XR application/rendering toolkit allowing for a fast and lightweight display server.
-				The compiled server binary when statically linking StereoKit is less than 10MB and uses ~50MB of RAM (varies depending on clients).
+				The compiled server binary when statically linking StereoKit is less than 20MB and uses ~50MB of RAM (varies depending on clients).
 			</>
 		),
 	},
