@@ -22,8 +22,9 @@ The local space for a pointer is where +Z is along the pointer's direction, +X i
 | scroll | `Vector2` (component range `-0.5`-`0.5`) | The amount to scroll on this input tick (sensitivity determined on the receiving client). Can be used for 2D scrolling as well as adjusting depth/size when grabbing an object. |
 ### Built in
 | Key    | Value Type                                | Description                                                                                                                                                                     |
-|--------|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------|--------------|-----------------------------------------------------------|
 | deepestPointDistance | `float` (>=`0.0`) | The distance along the ray where the deepest surface point resides. |
+| type | `string` |  The type of pointer. Can be one of `"eyes"`, `"mouse"`, `"controller"`, `"gaze"`, `"generic"` |
 
 ## Methods
 ### `setDirection(Vector3 direction)`

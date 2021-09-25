@@ -39,6 +39,7 @@ The datamap is a dictionary containing abstracted and raw data related to the in
 | `float`   | Analog trigger, grip             | For values such as grip/trigger, make the range `0.0`-`1.0`, for something like a scroll wheel `-0.5`-`0.5`.                                       |
 | `Vector2` | Touchpad, joystick               | For values such as trackpad and joystick, make each component in the range of `-0.5`-`0.5` and calculate+apply deadzone before setting these values. |
 | `Vector3` | Pinch position, grip axis vector | For points and directions, make this a value inside the  InputMethod's local space. Raw hand pose data should not be put in the datamap.           |
+| `string` | Input device type/name | Device name such as `"valveindex"` and device type such as `"controller"` on a PointerInput. Useful for client devs to customize input to work best with these devices. |
 
 Standard supported datamap keys will be put in the individual type's documentation, however you can put more data in and some input handlers may be able to use that data for better interactions.
 

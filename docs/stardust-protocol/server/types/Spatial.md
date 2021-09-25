@@ -22,9 +22,6 @@ Moves the Spatial relative to itself if `translatable` is not `false`.
 ### `rotate(Quat rotation)`
 Rotates the Spatial relative to itself if `rotatable` is not `false`.
 
-### `rotateAround(Vector3 point, Quat rotation)`
-Rotates the Spatial around `point` (relative to itself) if `rotatable` is not `false`.
-
 ### `scale(float scale)`
 Multiplies the Spatial's scale vector by `scale` if `scalable` is not `false`.
 
@@ -44,4 +41,7 @@ Sets the pose relative to the Spatial's space if `translatable` and `rotatable` 
 Sets the transform relative to the Spatial's space if `translatable`, `rotatable` and `scalable` are true. This method saves on IPC calls compared to `setOrigin`, `setOrientation`, and `setScale` in sequence.
 
 ### `setSpatialParent(string parentPath)`
-Sets the spatial parent of this `Spatial` while keeping the "absolute" position in space intact.
+Sets the spatial parent of this `Spatial` while keeping the object in the same place in local space.
+
+### `setSpatialParentInPlace(string parentPath)`
+Sets the spatial parent of this `Spatial` while not changing the object's absolute position.
