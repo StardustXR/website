@@ -3,5 +3,5 @@
 Object managing spatial nodes for parenting.
 
 ## Signals
-### `create(string name, Vector3 origin, Quat orientation, Vector3 scale, bool translatable, bool rotatable, bool scalable)`
-Creates a new [Spatial](../types/Spatial.md) at `/spatial/[name]`.
+### `create(string name, string spacePath, Vector3 origin, Quat orientation, Vector3 scale, bool translatable, bool rotatable, bool scalable)`
+Creates a new [Spatial](../types/Spatial.md) at `/spatial/[name]` with parent at `spacePath`.
