@@ -14,8 +14,10 @@ If false, object's origin cannot be modified from a client.
 If false, object's rotation cannot be modified from a client (e.g. point lights, point sound sources).
 ### `scalable: bool`
 If false, object's scale cannot be modified from a client (e.g. [Fields](field/Field), [PointerInput](input/inputtypes/PointerInput.md)).
+### `zoneable: bool`
+If false, no zones will see that this spatial exists. Useful for locking objects in space so they aren't affected by workspaces and generally shouldn't be true for anything other than the root spatial of an object.
 
-## Methods
+## Signals
 ### `move(Vector3 position)`
 Moves the Spatial relative to itself if `translatable` is not `false`.
 
@@ -45,3 +47,10 @@ Sets the spatial parent of this `Spatial` while keeping the object in the same p
 
 ### `setSpatialParentInPlace(string parentPath)`
 Sets the spatial parent of this `Spatial` while not changing the object's absolute position.
+
+### `setZoneable(bool zoneable)`
+Enable/disable this spatial's zoneable property.
+
+## Methods
+### `Vector<Vector3 origin, Quat orientation, Vector3 scale> getTransform(null)`
+Returns the `origin`, `orientation`, and `scale` of this spatial relative to its parent.

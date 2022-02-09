@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Model
 ### Derived from [Spatial](Spatial)
-A graphical model.
+A graphical model. It will only show when enabled.
 
 ## Properties
 
