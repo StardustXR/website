@@ -48,7 +48,12 @@ module.exports = {
 					position: 'right',
 				},
 				{
-					href: 'https://github.com/StardustXR/stardust-xr',
+					href: 'https://matrix.to/#/#stardustxr:matrix.org',
+					label: 'Matrix',
+					position: 'right',
+				},
+				{
+					href: 'https://github.com/StardustXR',
 					label: 'GitHub',
 					position: 'right',
 				},
@@ -82,6 +87,10 @@ module.exports = {
 							href: 'https://discord.gg/qwxuwRrbP5',
 						},
 						{
+							label: 'Matrix',
+							href: 'https://matrix.to/#/#stardustxr:matrix.org',
+						},
+						{
 							label: 'Twitter',
 							href: 'https://twitter.com/stardustxr',
 						},
@@ -101,6 +110,10 @@ module.exports = {
 						{
 							label: 'libstardustxr (includes Fusion)',
 							href: 'https://github.com/StardustXR/libstardustxr',
+						},
+						{
+							label: 'Stardust Client Tests',
+							href: 'https://github.com/StardustXR/stardust-client-tests',
 						},
 					],
 				},
