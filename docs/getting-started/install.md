@@ -4,7 +4,12 @@ sidebar_position: 2
 
 # Installation
 
-Stardust officially works on Linux distributions, it may work on BSD/Fuchsia but that support is not guaranteed. Windows/macOS support is not planned at this time.
+As Stardust is a display server, it is split into multiple parts. Make sure to install the parts in order to avoid issues, and don't be afraid to ask questions in the Matrix or Discord servers!
+
+1. [libstardustxr client/server](#libstardustxr-server-client-and-fusion)
+2. [libstardustxr-fusion](#libstardustxr-server-client-and-fusion)
+3. [stardust-xr](#stardust-xr-reference-server)
+4. Other clients (such as the [tests](#stardust-client-tests))
 
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
@@ -53,7 +58,10 @@ AUR: `stardust-xr-git`
 4. GLX+Xlib
 5. fontconfig
 6. dlopen
-7. OpenXR Loader (required even if run in flatscreen mode)
+7. libseat (such as [seatd](https://sr.ht/~kennylevinsen/seatd/))
+8. wayland
+9. xwayland
+10. OpenXR Loader (required even if run in flatscreen mode, generally just named `openxr`)
 
 ### Download
 ```bash
@@ -70,5 +78,30 @@ ninja
 
 ### Install
 ```bash
-ninja install
+meson install --skip-subprojects
+```
+
+
+## [Stardust Client Tests](https://github.com/StardustXR/stardust-client-tests)
+
+### Build system
+1. Meson >= 0.55.0
+2. Ninja (tested on 1.10.2)
+
+### Build dependencies
+1. [libstardustxr](#libstardustxr-server-client-and-fusion)
+2. Flatbuffers >= 1.12.0
+3. sdbus-cpp
+
+### Download
+```bash
+git clone https://github.com/StardustXR/stardust-client-tests.git
+cd stardust-xr
+```
+
+### Build
+```bash
+meson build --prefix=/usr
+cd build
+ninja
 ```
