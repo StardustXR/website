@@ -62,6 +62,7 @@ AUR: `stardust-xr-git`
 8. wayland
 9. xwayland
 10. OpenXR Loader (required even if run in flatscreen mode, generally just named `openxr`)
+11. libxkbcommon-x11
 
 ### Download
 ```bash
@@ -96,7 +97,7 @@ meson install --skip-subprojects
 ### Download
 ```bash
 git clone https://github.com/StardustXR/stardust-client-tests.git
-cd stardust-xr
+cd stardust-client-tests
 ```
 
 ### Build
