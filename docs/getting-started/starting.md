@@ -2,11 +2,11 @@
 sidebar_position: 3
 ---
 
-# Use
+# Starting
 
-## Server
+First, try running `stardustxr` in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:
 
-The server has a flatscreen mode where it pops open a window for you to interact on a 2D screen and XR mode where it becomes an OpenXR client.
+![A pitch black void with a single bleach white hand in the middle](/img/docs/run/xr_mode_windowed_blank.png)
 
 ### Images
 Flatscreen mode upon initial startup:

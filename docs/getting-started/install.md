@@ -6,10 +6,9 @@ sidebar_position: 2
 
 As Stardust is a display server, it is split into multiple parts. Make sure to install the parts in order to avoid issues, and don't be afraid to ask questions in the Matrix or Discord servers!
 
-1. [libstardustxr client/server](#libstardustxr-server-client-and-fusion)
-2. [libstardustxr-fusion](#libstardustxr-server-client-and-fusion)
-3. [stardust-xr](#stardust-xr-reference-server)
-4. Other clients (such as the [tests](#stardust-client-tests))
+1. [libstardustxr client/server/fusion](#libstardustxr-server-client-and-fusion)
+2. [stardust-xr](#stardust-xr-reference-server)
+3. Other clients (such as the [tests](#stardust-client-tests))
 
 ## [libstardustxr](https://github.com/StardustXR/libstardustxr) (server, client, and fusion)
 
