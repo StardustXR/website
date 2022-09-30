@@ -8,7 +8,7 @@ const FeatureList = [
 		image: '/img/icon.gif',
 		description: (
 			<>
-				Stardust allows you to make XR widgets or interfaces and run them among others.
+				Stardust allows developers to make XR widgets or interfaces and run them among others.
 				You don&apos;t have to make a whole system UI, just a few pieces.
 			</>
 		),

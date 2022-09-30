@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Starting
 
-First, try running `stardustxr` in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:
+First, try running `stardust-xr-server` in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:
 
 ![A pitch black void with a single bleach white hand in the middle](/img/docs/run/xr_mode_windowed_blank.png)
 
@@ -20,11 +20,16 @@ Flatscreen mode when `~/.config/stardust/skytex.hdr` is [Zhengyang Gate](https:/
 
 ### Help screen
 ```
-Stardust XR
-Usage: stardustxr [OPTIONS]
+stardust-xr-server 0.10.0
+Nova King <technobaboo@proton.me>
+Stardust XR reference display server
 
-Options:
-  -h,--help                   Print this help message and exit
-  -F,--flatscreen             Run Stardust in flatscreen mode
-  --field-debug               Draw translucent meshes around fields
+USAGE:
+    stardust-xr-server [OPTIONS]
+
+OPTIONS:
+    -f, --flatscreen            Force flatscreen mode and use the mouse pointer as a 3D pointer
+    -h, --help                  Print help information
+    -o, --overlay <PRIORITY>    Run Stardust XR as an overlay with given priority
+    -V, --version               Print version information
 ```

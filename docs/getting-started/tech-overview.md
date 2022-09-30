@@ -7,7 +7,7 @@ sidebar_position: 4
 ## Server
 The server is what renders all the meshes of each client, takes in input from input methods, and spits out input to input handlers according to the SUIS (Spatial Universal Interaction System). As well, the server is going to be part Wayland compositor and OpenXR runtime so all 2D and XR applications can be used together at once (if the hardware allows). It is the glue of Stardust, allowing any number of clients and apps to work in harmony while allowing the user full control in an intuitive way.
 
-As new technologies come out, keeping the same server and trying to progressively upgrade it may lead to bloat and issues, so the protocol is designed to make creating new servers possible without too much hassle. Old interfaces can be deprecated without breaking the overall system, and new interfaces can be added if needed due to the object-oriented design. The design is highly inspired by game engines, however the reference server is made in StereoKit due to it being more optimal.
+As new technologies come out, keeping the same server and trying to progressively upgrade it may lead to bloat and issues, so the protocol is designed to make creating new servers possible without too much hassle or to make servers modular. Old interfaces can be deprecated without breaking the overall system, and new interfaces can be added if needed due to the object-oriented design. The design is highly inspired by game engines, however the reference server is made in StereoKit due to it being more optimal.
 
 ### Reference Server
 Stardust has a reference server, but unlike other display servers this reference server is just as functional as any other Stardust server would be, because all the functionality is implemented in the clients. The server is just the glue.
@@ -30,10 +30,10 @@ The reference server uses StereoKit as its backend for many reasons:
 - Uses OpenXR as its backend out of the box
 
 ## IPC
-The Stardust XR IPC uses Unix domain sockets for communication.
+The Stardust XR IPC uses Unix domain sockets for communication and a protocol based on flatbuffers/flexbuffers.
 
 ## [Protocol](stardust-protocol/protocol.md)
 The Stardust XR protocol is object-oriented, depending on a scenegraph on the server end and scenegraph or functionally equivalent structure on the client end. This allows easier implementation of the protocol while still remaining fast and reliable.
 
 ## Clients
-The clients tell the server what models to draw, where they would like to accept input in, etc. Stardust clients are much more suited to widgets or user interfaces to 2D/XR apps. However, if a more fully featured application works better in Stardust it can do that too.
+The clients tell the server what models to draw, where they would like to accept input in, etc. Stardust clients are much more suited to widgets or user interfaces to 2D/XR apps.
