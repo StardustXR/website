@@ -8,13 +8,13 @@ title: Roadmap
 
 - [x] Core functionality
   - [x] IPC+RPC
-  - [x] Protocol documentation
 - [x] Client
   - [x] Fusion
     - [x] Initial connection
     - [x] Node type creation/destruction
     - [x] Interface interaction
     - [x] Callbacks
+    - [ ] Documentation
 - [ ] Server
   - [x] Per-client scenegraph
   - [x] Statically link StereoKit
@@ -45,18 +45,17 @@ title: Roadmap
     - [x] Environment
       - [x] Set skytex
       - [x] Set skylight
-    - [ ] Items
-      - [ ] Base item class
+    - [x] Items
+      - [x] Base item class
       - [ ] Base item accepter class
-      - [ ] Environment equirectangular item
+      - [x] Environment equirectangular item
       - [ ] Environment equirectangular accepter
     - [ ] 2D integration
-      - [ ] Panels
-        - [ ] Panel item
-        - [ ] sk-wlroots (for Wayland)
-          - [x] Statically link wlroots
+      - [x] Panels
+        - [x] Panel item
+        - [x] smithay (for Wayland)
           - [x] Rendering
-          - [ ] Input seats
+          - [x] Input seats
       - [ ] Panel shells
         - [ ] Accept panel items
         - [ ] Put surface on model material's texture

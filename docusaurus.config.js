@@ -73,10 +73,6 @@ module.exports = {
 							label: 'Getting Started',
 							to: '/docs/getting-started/overview',
 						},
-						{
-							label: 'Protocol',
-							to: '/docs/stardust-protocol/protocol',
-						},
 					],
 				},
 				{
