@@ -46,7 +46,7 @@ cargo install
 1. Cargo
 
 ### Build dependencies
-1. Flatbuffers >= 1.12.0
+1. Flatbuffers >= 2.0.8
 
 ### Install
 ```bash
