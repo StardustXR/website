@@ -32,8 +32,8 @@ The reference server uses StereoKit as its backend for many reasons:
 ## IPC
 The Stardust XR IPC uses Unix domain sockets for communication and a protocol based on flatbuffers/flexbuffers.
 
-## [Protocol](stardust-protocol/protocol.md)
-The Stardust XR protocol is object-oriented, depending on a scenegraph on the server end and scenegraph or functionally equivalent structure on the client end. This allows easier implementation of the protocol while still remaining fast and reliable.
+## Protocol
+The Stardust XR protocol is object-oriented, depending on a scenegraph on the server end and scenegraph or functionally equivalent structure on the client end. This allows easier implementation of the protocol while still remaining fast, reliable, and extensible.
 
 ## Clients
 The clients tell the server what models to draw, where they would like to accept input in, etc. Stardust clients are much more suited to widgets or user interfaces to 2D/XR apps.
