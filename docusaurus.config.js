@@ -101,15 +101,15 @@ module.exports = {
 					items: [
 						{
 							label: 'Stardust XR (Server)',
+							href: 'https://github.com/StardustXR/stardust-xr-server',
+						},
+						{
+							label: 'stardust-xr (includes Fusion)',
 							href: 'https://github.com/StardustXR/stardust-xr',
 						},
 						{
-							label: 'libstardustxr (includes Fusion)',
-							href: 'https://github.com/StardustXR/libstardustxr',
-						},
-						{
-							label: 'Stardust Client Tests',
-							href: 'https://github.com/StardustXR/stardust-client-tests',
+							label: 'Flatland',
+							href: 'https://github.com/StardustXR/flatland',
 						},
 					],
 				},
