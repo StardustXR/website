@@ -57,6 +57,11 @@ module.exports = {
 					label: 'GitHub',
 					position: 'right',
 				},
+				{
+					href: 'https://github.com/sponsors/technobaboo',
+					label: 'Sponsor This',
+					position: 'right',
+				},
 			],
 		},
 		footer: {
@@ -93,6 +98,10 @@ module.exports = {
 						{
 							label: 'Stardust XR (GitHub)',
 							href: 'https://github.com/StardustXR',
+						},
+						{
+							label: 'Sponsor This',
+							href: 'https://github.com/sponsors/technobaboo',
 						},
 					],
 				},
