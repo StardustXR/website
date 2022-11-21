@@ -35,6 +35,12 @@ cd stardust-xr-server
 cargo build
 ```
 
+### Install
+(this step isn't required. Using `cargo run` while developing is just fine)
+```bash
+cargo install --path .
+```
+
 ## [Flatland](https://github.com/StardustXR/flatland) (Simple simula-like panel UI client for 2D app interaction)
 
 ### Build system
