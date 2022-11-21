@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Starting
 
-First, try running `stardust-xr-server` in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:
+First, try running `cargo run` in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:
 
 ![A pitch black void with a single bleach white hand in the middle](/img/docs/run/xr_mode_windowed_blank.png)
 
