@@ -14,8 +14,8 @@ title: Roadmap
     - [x] Node type creation/destruction
     - [x] Interface interaction
     - [x] Callbacks
-    - [ ] Documentation
-- [ ] Server
+    - [x] Documentation
+- [x] Server
   - [x] Per-client scenegraph
   - [x] Statically link StereoKit
   - [x] Basic features
@@ -47,17 +47,27 @@ title: Roadmap
       - [x] Set skylight
     - [x] Items
       - [x] Base item class
-      - [ ] Base item accepter class
+      - [x] Base item accepter class
       - [x] Environment equirectangular item
-      - [ ] Environment equirectangular accepter
-    - [ ] 2D integration
+      - [x] Environment equirectangular accepter
+    - [x] 2D integration
       - [x] Panels
         - [x] Panel item
         - [x] smithay (for Wayland)
           - [x] Rendering
           - [x] Input seats
-      - [ ] Panel shells
-        - [ ] Accept panel items
-        - [ ] Put surface on model material's texture
-        - [ ] Feed input through to panel
-        - [ ] Release panel items
+      - [x] Panel shells
+        - [x] Accept panel items
+        - [x] Put surface on model material's texture
+        - [x] Feed input through to panel
+        - [x] Release panel items
+- [ ] Daily Drivable System
+  - [ ] GUI App Launcher (Protostar)
+    - [x] Get desktop files
+    - [x] Find and parse icons
+    - [ ] Display icons and desktop files in grid
+    - [x] Launch executables spatially
+  - [ ] Panel Item UI
+    - [ ] Flatland
+
+More to come!
