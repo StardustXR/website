@@ -15,9 +15,9 @@
 	--ifm-color-primary-lighter: #8443c1;
 	--ifm-color-primary-lightest: #954cda;
 
-	--ifm-color-secondary: #674ed8;
-	--ifm-color-secondary-dark: #573ca7;
-	--ifm-color-secondary-darker: #352f83;
+	--ifm-color-secondary: #e1e456;
+	--ifm-color-secondary-dark: rgb(175, 173, 33);
+	--ifm-color-secondary-darker: rgb(165, 163, 31);
 }
 
 .docusaurus-highlight-code-line {
