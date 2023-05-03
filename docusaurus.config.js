@@ -37,6 +37,17 @@ module.exports = {
 					position: 'left',
 					label: 'Docs',
 				},
+				
+				//CHANGES
+				
+				{
+					href: '/about',
+					position: 'left',
+					label: 'About',
+				},
+				
+				//END CHANGES
+				
 				{
 					href: 'https://twitter.com/stardustxr',
 					label: 'Twitter',
