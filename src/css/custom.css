@@ -18,6 +18,7 @@
 	--ifm-color-secondary: #e1e456;
 	--ifm-color-secondary-dark: rgb(175, 173, 33);
 	--ifm-color-secondary-darker: rgb(165, 163, 31);
+	--ifm-code-font-size: 95%;
 }
 
 .docusaurus-highlight-code-line {
