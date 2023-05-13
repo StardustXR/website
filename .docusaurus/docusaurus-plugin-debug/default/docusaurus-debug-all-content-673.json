@@ -1,0 +1,217 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/StardustXR/website/edit/main/docs",
+          "versionEditUrlLocalized": "https://github.com/StardustXR/website/edit/main/i18n/en/docusaurus-plugin-content-docs/current",
+          "versionBanner": "none",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/home/hydralm/websiteMain/sidebars.js",
+          "contentPath": "/home/hydralm/websiteMain/docs",
+          "contentPathLocalized": "/home/hydralm/websiteMain/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "getting-started/overview",
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "category",
+                "label": "Getting Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "getting-started/overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/tech-overview"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/install"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/starting"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "getting-started/making-clients"
+                  }
+                ],
+                "collapsed": true
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/getting-started/install": "tutorialSidebar",
+            "/docs/getting-started/making-clients": "tutorialSidebar",
+            "/docs/getting-started/overview": "tutorialSidebar",
+            "/docs/getting-started/starting": "tutorialSidebar",
+            "/docs/getting-started/tech-overview": "tutorialSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "getting-started/install",
+              "id": "getting-started/install",
+              "isDocsHomePage": false,
+              "title": "Installation",
+              "description": "As Stardust is a display server, it is split into multiple parts. Don't be afraid to ask questions in the Matrix or Discord servers!",
+              "source": "@site/docs/getting-started/install.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/install",
+              "permalink": "/docs/getting-started/install",
+              "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/install.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Technical Overview",
+                "permalink": "/docs/getting-started/tech-overview"
+              },
+              "next": {
+                "title": "Starting",
+                "permalink": "/docs/getting-started/starting"
+              }
+            },
+            {
+              "unversionedId": "getting-started/making-clients",
+              "id": "getting-started/making-clients",
+              "isDocsHomePage": false,
+              "title": "Making Clients",
+              "description": "A Stardust client is at its core an executable that connects to a stardust server instance at $XDGRUNTIMEDIR/stardust-[0-32], sends and receives messages according to the Stardust protocol.",
+              "source": "@site/docs/getting-started/making-clients.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/making-clients",
+              "permalink": "/docs/getting-started/making-clients",
+              "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/making-clients.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Starting",
+                "permalink": "/docs/getting-started/starting"
+              }
+            },
+            {
+              "unversionedId": "getting-started/overview",
+              "id": "getting-started/overview",
+              "isDocsHomePage": false,
+              "title": "Overview",
+              "description": "Description",
+              "source": "@site/docs/getting-started/overview.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/overview",
+              "permalink": "/docs/getting-started/overview",
+              "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/overview.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Technical Overview",
+                "permalink": "/docs/getting-started/tech-overview"
+              }
+            },
+            {
+              "unversionedId": "getting-started/starting",
+              "id": "getting-started/starting",
+              "isDocsHomePage": false,
+              "title": "Starting",
+              "description": "First, try running cargo run in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:",
+              "source": "@site/docs/getting-started/starting.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/starting",
+              "permalink": "/docs/getting-started/starting",
+              "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/starting.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installation",
+                "permalink": "/docs/getting-started/install"
+              },
+              "next": {
+                "title": "Making Clients",
+                "permalink": "/docs/getting-started/making-clients"
+              }
+            },
+            {
+              "unversionedId": "getting-started/tech-overview",
+              "id": "getting-started/tech-overview",
+              "isDocsHomePage": false,
+              "title": "Technical Overview",
+              "description": "Server",
+              "source": "@site/docs/getting-started/tech-overview.md",
+              "sourceDirName": "getting-started",
+              "slug": "/getting-started/tech-overview",
+              "permalink": "/docs/getting-started/tech-overview",
+              "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/tech-overview.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Overview",
+                "permalink": "/docs/getting-started/overview"
+              },
+              "next": {
+                "title": "Installation",
+                "permalink": "/docs/getting-started/install"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [],
+      "blogListPaginated": [],
+      "blogTags": {},
+      "blogTagsListPath": null
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "mdx",
+        "permalink": "/about",
+        "source": "@site/src/pages/about.md"
+      },
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/roadmap",
+        "source": "@site/src/pages/roadmap.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

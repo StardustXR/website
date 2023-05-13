@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/install",
+  "id": "getting-started/install",
+  "isDocsHomePage": false,
+  "title": "Installation",
+  "description": "As Stardust is a display server, it is split into multiple parts. Don't be afraid to ask questions in the Matrix or Discord servers!",
+  "source": "@site/docs/getting-started/install.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/install",
+  "permalink": "/docs/getting-started/install",
+  "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/install.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Technical Overview",
+    "permalink": "/docs/getting-started/tech-overview"
+  },
+  "next": {
+    "title": "Starting",
+    "permalink": "/docs/getting-started/starting"
+  }
+}

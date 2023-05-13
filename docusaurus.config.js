@@ -15,7 +15,7 @@ module.exports = {
 	projectName: 'website', // Usually your repo name.
 	themeConfig: {
 		colorMode: {
-			defaultMode: "dark",
+			defaultMode: 'dark',
 			disableSwitch: true,
 			respectPrefersColorScheme: false,
 		},
@@ -31,6 +31,15 @@ module.exports = {
 					position: 'left',
 					label: 'Roadmap',
 				},
+
+				//CHANGES
+				{
+					href: '/about',
+					position: 'left',
+					label: 'About',
+				},
+				//END CHANGES
+
 				{
 					type: 'doc',
 					docId: 'getting-started/overview',

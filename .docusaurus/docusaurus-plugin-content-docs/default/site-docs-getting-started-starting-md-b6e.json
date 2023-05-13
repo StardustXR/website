@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/starting",
+  "id": "getting-started/starting",
+  "isDocsHomePage": false,
+  "title": "Starting",
+  "description": "First, try running cargo run in a terminal window. If a headset is plugged in and OpenXR is working no window will show up. However, the headset should show the same things as the window that opens:",
+  "source": "@site/docs/getting-started/starting.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/starting",
+  "permalink": "/docs/getting-started/starting",
+  "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/starting.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "sidebar_position": 4
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/install"
+  },
+  "next": {
+    "title": "Making Clients",
+    "permalink": "/docs/getting-started/making-clients"
+  }
+}
