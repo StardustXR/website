@@ -1,0 +1,22 @@
+{
+  "unversionedId": "getting-started/making-clients",
+  "id": "getting-started/making-clients",
+  "isDocsHomePage": false,
+  "title": "Making Clients",
+  "description": "A Stardust client is at its core an executable that connects to a stardust server instance at $XDGRUNTIMEDIR/stardust-[0-32], sends and receives messages according to the Stardust protocol.",
+  "source": "@site/docs/getting-started/making-clients.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/making-clients",
+  "permalink": "/docs/getting-started/making-clients",
+  "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/making-clients.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Starting",
+    "permalink": "/docs/getting-started/starting"
+  }
+}

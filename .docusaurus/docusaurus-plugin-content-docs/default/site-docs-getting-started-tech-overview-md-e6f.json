@@ -1,0 +1,26 @@
+{
+  "unversionedId": "getting-started/tech-overview",
+  "id": "getting-started/tech-overview",
+  "isDocsHomePage": false,
+  "title": "Technical Overview",
+  "description": "Server",
+  "source": "@site/docs/getting-started/tech-overview.md",
+  "sourceDirName": "getting-started",
+  "slug": "/getting-started/tech-overview",
+  "permalink": "/docs/getting-started/tech-overview",
+  "editUrl": "https://github.com/StardustXR/website/edit/main/docs/getting-started/tech-overview.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Overview",
+    "permalink": "/docs/getting-started/overview"
+  },
+  "next": {
+    "title": "Installation",
+    "permalink": "/docs/getting-started/install"
+  }
+}

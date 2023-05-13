@@ -23,3 +23,13 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.hero__title {
+	font-size: 48px;
+	color: rgb(250,250,250);
+}
+
+.hero__subtitle {
+	font-size: 25px;
+	color: rgb(250,250,250);
+}

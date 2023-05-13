@@ -1,0 +1,43 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "getting-started/overview",
+          "docs": [
+            {
+              "id": "getting-started/install",
+              "path": "/docs/getting-started/install",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/making-clients",
+              "path": "/docs/getting-started/making-clients",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/overview",
+              "path": "/docs/getting-started/overview",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/starting",
+              "path": "/docs/getting-started/starting",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "getting-started/tech-overview",
+              "path": "/docs/getting-started/tech-overview",
+              "sidebar": "tutorialSidebar"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

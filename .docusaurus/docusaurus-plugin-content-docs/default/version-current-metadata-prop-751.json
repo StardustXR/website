@@ -1,0 +1,50 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "banner": "none",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "category",
+        "label": "Getting Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Overview",
+            "href": "/docs/getting-started/overview"
+          },
+          {
+            "type": "link",
+            "label": "Technical Overview",
+            "href": "/docs/getting-started/tech-overview"
+          },
+          {
+            "type": "link",
+            "label": "Installation",
+            "href": "/docs/getting-started/install"
+          },
+          {
+            "type": "link",
+            "label": "Starting",
+            "href": "/docs/getting-started/starting"
+          },
+          {
+            "type": "link",
+            "label": "Making Clients",
+            "href": "/docs/getting-started/making-clients"
+          }
+        ],
+        "collapsed": true
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/getting-started/install": "tutorialSidebar",
+    "/docs/getting-started/making-clients": "tutorialSidebar",
+    "/docs/getting-started/overview": "tutorialSidebar",
+    "/docs/getting-started/starting": "tutorialSidebar",
+    "/docs/getting-started/tech-overview": "tutorialSidebar"
+  }
+}
