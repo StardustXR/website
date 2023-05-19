@@ -18,6 +18,25 @@ XR mode when OpenXR somehow fails:
 Flatscreen mode when `~/.config/stardust/skytex.hdr` is [Zhengyang Gate](https://polyhaven.com/a/zhengyang_gate):
 ![A pitch black window representing Stardust in flatscreen mode](/img/docs/run/flatscreen_3.png)
 
+### Startup Scripts
+
+`stardust-xr-server` is a Wayland server which clients can connect to.
+The easiest way to get Wayland applications to connect is to run a script with your initial environment.
+This can be specified using the `-e or --execute-startup-script <PATH>` CLI argument, or can be placed in `$HOME/.config/stardust/startup`.
+(assuming you have cloned and installed [flatland](https://github.com/StardustXR/flatland))
+
+This example will spawn the flatland client which will help arrange 2D windows, and spawn a KDE konsole which will attach to the wayland display set up by stardust. You will then be able to drag the konsole around with your mouse. If you have a keyboard you can move your camera around with `Shift+WASD`. If you don't have a 6DoF controller connected you can also use your mouse to move a hand around and the scroll wheel to move it towards and away from your screen.
+
+```
+#!/bin/sh
+
+echo $DISPLAY;
+echo $WAYLAND_DISPLAY;
+
+flatland &
+konsole &
+```
+
 ### Help screen
 ```
 stardust-xr-server 0.10.0
