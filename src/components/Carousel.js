@@ -3,14 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 
 const ImageList = [
 	{
-		image: "img/carousel/multipleclients.jpg",
-		alt: "A scene showing multiple widgets, including sliders like an equalizer and a virtual touchscreen.",
+		image: "img/carousel/multipleclients.png",
+		alt: "A scene showing multiple widgets, including CRT TV panel shells and flat touchscreen panels and 2 rings forming a cylinder around the scene.",
 		caption: "Multiple objects working independently all at once.",
-	},
-	{
-		image: "img/carousel/spatialcode.png",
-		alt: "To the left, a code editor showing Stardust Fusion creating several models and transforming them on the logicStep. To the right is the program running in Stardust.",
-		caption: "Code vs output of the Spatial Fusion demo.",
 	},
 	{
 		image: "img/carousel/panels.png",
