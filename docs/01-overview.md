@@ -24,8 +24,7 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 
 ## Architecture
 
-TODO: add some diagram of the core components needed and how they interface
-<!-- example: https://woodpecker-ci.org/docs/next/usage/terminology#woodpecker-architecture -->
+![simplified architecture diagram](./simplified-architecture.png)
 
 ## Projects & Components
 
