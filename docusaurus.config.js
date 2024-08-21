@@ -13,6 +13,10 @@ module.exports = {
 	favicon: 'img/favicon.ico',
 	organizationName: 'StardustXR', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
+	markdown: {
+		mermaid: true,
+	},
+	themes: ['@docusaurus/theme-mermaid'],
 	themeConfig: {
 		colorMode: {
 			defaultMode: "dark",
