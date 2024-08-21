@@ -11,12 +11,12 @@ Every message uses [flatbuffers](https://google.github.io/flatbuffers/) and [fle
 namespace StardustXR;
 
 table Message {
-	type: ubyte;
-	id: uint;
-	object: string;
-	method: string;
-	error: string;
-	data:[ubyte] (flexbuffer);
+  type: ubyte;
+  id: uint;
+  object: string;
+  method: string;
+  error: string;
+  data:[ubyte] (flexbuffer);
 }
 
 root_type Message;
