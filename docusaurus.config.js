@@ -13,6 +13,10 @@ module.exports = {
 	favicon: 'img/favicon.ico',
 	organizationName: 'StardustXR', // Usually your GitHub org/user name.
 	projectName: 'website', // Usually your repo name.
+	markdown: {
+		mermaid: true,
+	},
+	themes: ['@docusaurus/theme-mermaid'],
 	themeConfig: {
 		colorMode: {
 			defaultMode: "dark",
@@ -33,7 +37,7 @@ module.exports = {
 				},
 				{
 					type: 'doc',
-					docId: 'getting-started/overview',
+					docId: 'overview',
 					position: 'left',
 					label: 'Docs',
 				},
@@ -76,7 +80,7 @@ module.exports = {
 						},
 						{
 							label: 'Getting Started',
-							to: '/docs/getting-started/overview',
+							to: '/docs/getting-started/tutorial',
 						},
 					],
 				},
