@@ -32,7 +32,10 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 - [**server**](https://github.com/StardustXR/server): Reverence implementation of the StardustXR server (similar to wayland's `weston`)
 - [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
 - [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
-- [****](): 
-- [****](): 
-- [****](): 
-- [****](): 
+- [**protostar**](https://github.com/StardustXR/protostar): Demo application launcher (like `nwg-drawer`, ...)
+- [**black hole**](https://github.com/StardustXR/black-hole): Spatial storage for stardust xr
+- [**gravity**](https://github.com/StardustXR/gravity): "Utility to launch apps and stardust clients spatially" ?!? is it an ap lancher like protostar? I could not got it to work ...
+- [**magnetar**](https://github.com/StardustXR/magnetar): Workspaces client
+- [**atmosphere**](https://github.com/StardustXR/atmosphere): Environment, homespace, and setup client
+- [**orbit**](https://github.com/StardustXR/orbit): Simple Panel Item UI ?!?
+- [**comet**](https://github.com/StardustXR/comet): Annotate things?!?
