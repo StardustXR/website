@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Overview
+# Brief Overview
 
-Stardust XR _(formerly known as Stardust)_ is an XR [display server](https://itsfoss.com/display-server) designed for Linux-based systems<!-- (possibly most unix-based too, but untested)-->.<br/>
+Stardust XR is an XR [display server](https://itsfoss.com/display-server) designed for Linux-based systems<!-- (possibly most unix-based too, but untested)-->.<br/>
 Unlike traditional display servers that focus on 2D screens, Stardust XR introduces new conventions to utilize unbounded 3D space in virtual or real environments.
 
 ## Priorities
@@ -24,7 +24,64 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 
 ## Architecture
 
-![simplified architecture diagram](/img/docs/simplified-architecture.png)
+```mermaid
+graph LR
+    OpenXR
+
+    OpenXR -->|Frame Data| StereoKit
+    OpenXR -->|Input Data| StereoKit
+
+    subgraph Server[Stardust Server]
+    		StereoKit[StereoKit]
+        InternalSceneGraph[Internal Scenegraph]
+        WC1[Wayland Client 1]
+        DBusConnection[D-Bus Connection]
+
+        ClientSceneGraph -->|Drawable Objects| StereoKit
+        StereoKit -->|Controller, Hand & HMD Data| InternalSceneGraph
+        InternalSceneGraph -->|Panel Items| ClientSceneGraph
+        InternalSceneGraph -->|Controller, Hand & HMD Export| DBusConnection
+        WC1 -->|Panel Item| InternalSceneGraph
+        WC1 -->|Textures| StereoKit
+        StereoKit -->|EGL Context| WC1
+        ClientSceneGraph --> C1
+
+        subgraph C1[Stardust Client 1]
+        	ClientSceneGraph[Client Scenegraph]
+        end
+    end
+
+    StardustSocket[Stardust Socket]
+    SessionBus[D-Bus Session Bus]
+    WaylandSocket[Wayland Socket]
+
+    WC1 --> WaylandSocket
+    WaylandSocket --> WC1
+    DBusConnection --> SessionBus
+    C1 --> StardustSocket
+
+    subgraph StardustClient[Stardust Client 1]
+        Fusion
+        Molecules
+        UserCode[User Code]
+
+        Fusion --> Molecules
+        Fusion --> UserCode
+        Molecules --> UserCode
+
+        subgraph Fusion
+            libstardustxr[stardust-xr library]
+        end
+    end
+
+    StardustSocket --> libstardustxr
+    SessionBus -->|HMD Spatial Reference| Fusion
+
+
+    WaylandClient[Wayland Client]
+    WaylandSocket --> WaylandClient
+    WaylandClient --> WaylandSocket
+```
 
 ## Projects & Components
 

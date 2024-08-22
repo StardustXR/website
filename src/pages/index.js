@@ -1,17 +1,17 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
-import Carousel from '../components/Carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import styles from "./index.module.css";
+import HomepageFeatures from "../components/HomepageFeatures";
+import Carousel from "../components/Carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function HomepageHeader() {
-	const {siteConfig} = useDocusaurusContext();
+	const { siteConfig } = useDocusaurusContext();
 	return (
-		<header className={clsx('hero hero--primary', styles.heroBanner)}>
+		<header className={clsx("hero hero--primary", styles.heroBanner)}>
 			<div className="container">
 				<link rel="me" href="https://fosstodon.org/@stardustxr"></link>
 				<h1 className="hero__title">{siteConfig.title}</h1>
@@ -19,7 +19,8 @@ function HomepageHeader() {
 				<div className={styles.buttons}>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/getting-started/tutorial">
+						to="/docs/get-started/setup-openxr"
+					>
 						Get Started
 					</Link>
 				</div>
@@ -29,11 +30,9 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-	const {siteConfig} = useDocusaurusContext();
+	const { siteConfig } = useDocusaurusContext();
 	return (
-		<Layout
-			image="img/icon.gif"
-			description="XR Display Server">
+		<Layout image="img/icon.gif" description="XR Display Server">
 			<HomepageHeader />
 			<main>
 				<HomepageFeatures />
