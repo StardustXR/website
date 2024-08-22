@@ -29,13 +29,12 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 ## Projects & Components
 
 - [**telescope**](https://github.com/StardustXR/telescope): bundle most used components to have a demo environment set up
-- [**server**](https://github.com/StardustXR/server): Reverence implementation of the StardustXR server (similar to wayland's `weston`)
+- [**server**](https://github.com/StardustXR/server): Reference implementation of the StardustXR server (similar to Xorg)
 - [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
 - [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
-- [**protostar**](https://github.com/StardustXR/protostar): Demo application launcher (like `nwg-drawer`, ...)
-- [**black hole**](https://github.com/StardustXR/black-hole): Spatial storage for stardust xr
-- [**gravity**](https://github.com/StardustXR/gravity): "Utility to launch apps and stardust clients spatially" ?!? is it an ap lancher like protostar? I could not got it to work ...
-- [**magnetar**](https://github.com/StardustXR/magnetar): Workspaces client
-- [**atmosphere**](https://github.com/StardustXR/atmosphere): Environment, homespace, and setup client
-- [**orbit**](https://github.com/StardustXR/orbit): Simple Panel Item UI ?!?
-- [**comet**](https://github.com/StardustXR/comet): Annotate things?!?
+- [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
+- [**black hole**](https://github.com/StardustXR/black-hole): Universal minimization of Stardust objects
+- [**gravity**](https://github.com/StardustXR/gravity): Launch programs with a certain offset in 3D space
+- [**magnetar**](https://github.com/StardustXR/magnetar): Example workspaces client
+- [**atmosphere**](https://github.com/StardustXR/atmosphere): 3D environment with natural momentum-based movement
+- [**comet**](https://github.com/StardustXR/comet): Annotate in 3D wherever you want amongst your other apps!
