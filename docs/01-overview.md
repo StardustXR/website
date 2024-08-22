@@ -29,7 +29,10 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 ## Projects & Components
 
 - [**telescope**](https://github.com/StardustXR/telescope): bundle most used components to have a demo environment set up
-- ...
-
-<!-- TODO: add more core components and projects! -->
-
+- [**server**](https://github.com/StardustXR/server): Reverence implementation of the StardustXR server (similar to wayland's `weston`)
+- [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
+- [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
+- [****](): 
+- [****](): 
+- [****](): 
+- [****](): 
