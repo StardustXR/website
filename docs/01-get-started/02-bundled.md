@@ -21,8 +21,14 @@ Make sure to have [flakes enabled](https://nixos.wiki/wiki/flakes).
 ### Run Telescope
 
 Because telescope itself is a nix flake, you simply have to run
+Intel/AMD/NVK graphics:
 ```sh
 nix run github:StardustXR/telescope
+```
+
+~~Proprietary NVIDIA graphics:~~ is broken :/
+```sh
+NIXPKGS_ALLOW_UNFREE=1 nix run --impure github:StardustXR/telescope#telescopeNvidia
 ```
 
 ## Non-nix
