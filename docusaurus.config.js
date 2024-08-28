@@ -31,11 +31,6 @@ module.exports = {
 			},
 			items: [
 				{
-					href: "/roadmap",
-					position: "left",
-					label: "Roadmap",
-				},
-				{
 					href: "https://twitter.com/stardustxr",
 					label: "Twitter",
 					position: "right",
@@ -68,10 +63,6 @@ module.exports = {
 				{
 					title: "Docs",
 					items: [
-						{
-							label: "Roadmap",
-							href: "roadmap",
-						},
 						{
 							label: "Getting Started",
 							to: "/docs/get-started/setup-openxr",
