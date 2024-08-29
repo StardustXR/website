@@ -4,6 +4,8 @@ title: Roadmap
 
 # Roadmap
 
+**Warning. This roadmap is now outdated.**
+
 ## 1.0 (Minimum Viable Product)
 
 - [x] Core functionality
