@@ -47,6 +47,8 @@ To install all Stardust XR packages (Ultramarine 40 and later, Fedora 41 and lat
 dnf group install stardust-xr
 ```
 
+From here, just run `telescope` in your terminal of choice.
+
 ## Other
 
 An AppImage generated from the nix flake is currently WIP. Please check back later or do a [manual build.](manual)
