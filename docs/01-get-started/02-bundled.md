@@ -31,6 +31,24 @@ nix run github:StardustXR/telescope
 NIXPKGS_ALLOW_UNFREE=1 nix run --impure github:StardustXR/telescope#telescopeNvidia
 ```
 
-## Non-nix
+## Fedora/Ultramarine
+
+You can install Telescope, and all other core Stardust tools, through the [Terra repository](https://terra.fyralabs.com/). This repository is pre-installed on Ultramarine, manual instructions can be found on their website.
+
+To just install Telescope:
+
+```
+dnf install telescope
+```
+
+To install all Stardust XR packages (Ultramarine 40 and later, Fedora 41 and later):
+
+```
+dnf group install stardust-xr
+```
+
+From here, just run `telescope` in your terminal of choice.
+
+## Other
 
 An AppImage generated from the nix flake is currently WIP. Please check back later or do a [manual build.](manual)

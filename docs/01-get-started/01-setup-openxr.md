@@ -30,7 +30,7 @@ It's generally easiest to follow the instructions at https://lvra.gitlab.io/docs
 
 ### Other distros
 
-[Envision](https://lvra.gitlab.io/docs/fossvr/envision/) is the XR launcher (like a minecraft launcher) of choice for open source XR and is overall better in practice than SteamVR.
+[Envision](https://lvra.gitlab.io/docs/fossvr/envision/) is the XR launcher (like a minecraft launcher) of choice for open source XR and is overall better in practice than SteamVR. If you are a Fedora user, Envision is packaged, but it's reccomended to get it from the [Terra repository](https://terra.fyralabs.com/). Other distros will need to build from source.
 
 # Test OpenXR Runtime
 
