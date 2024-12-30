@@ -35,7 +35,7 @@ NIXPKGS_ALLOW_UNFREE=1 nix run --impure github:StardustXR/telescope#telescopeNvi
 
 You can install Telescope, and all other core Stardust tools, through the [Terra repository](https://terra.fyralabs.com/). This repository is pre-installed on Ultramarine, manual instructions can be found on their website.
 
-To just install Telescpoe:
+To just install Telescope:
 
 ```
 dnf install telescope
