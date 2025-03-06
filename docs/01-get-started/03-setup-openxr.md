@@ -1,0 +1,88 @@
+---
+sidebar_position: 3
+---
+
+# Setup OpenXR Runtime 
+
+If you have a XR Headset and you'd like to use it with Stardust XR on Linux, the following are instructions on getting it up and running within a linux environment. Although XR support in Linux is still under active development, there are a number of good options available. If you already have XR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
+
+
+:::info
+If you want to test stardust in flatscreen mode in a window on your desktop without a headset or other OpenXR device, you can skip this step and start with [trying out telescope](Quickstart).
+:::
+# Envision
+:::note
+![Envision](/img/docs/Envision_Monado.png)
+
+We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), as it is an easy to use GUI for utilizing [Monado](https://monado.dev/) (an Open-Source implementation of OpenXR for Linux) which is what you will most likely be using if you have a wired headset, and Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) for connecting to headsets like the Meta Quest wirelessly.
+:::
+
+Check the [hardware table](https://lvra.gitlab.io/docs/hardware/) (for Monado/WiVRn support) to ensure your hardware and headset are compatible. It is very likely you will need [Nvidia drivers](https://rpmfusion.org/Howto/NVIDIA) if that's what you are using. Check the link for the which model graphics card may require different drivers, but the most likely command you will need to run if you have a modern card is:
+```
+sudo dnf install akmod-nvidia
+```
+AMD graphic cards currently do not require drivers.
+<h3>
+  <img 
+    src="/img/docs/Fedora_logo.svg" 
+    alt="Fedora Logo" 
+    style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
+  />
+  <img 
+    src="/img/docs/ultramarine-logo.svg" 
+    alt="Ultramarine Logo" 
+    style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
+  />
+  Fedora/Ultramarine Linux
+</h3>
+
+:::info
+You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org/download/) which comes pre-installed:
+```
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+```
+:::
+In your terminal, run:
+```
+sudo dnf install envision
+```
+<h3>
+  <img src="/img/docs/arch.png" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
+  Arch Linux 
+</h3>
+
+For Arch Linux, Envision is available via the [AUR](https://aur.archlinux.org/packages/envision-xr-git)
+```
+paru -S envision-xr-git
+```
+<h3>
+  <img src="/img/docs/nixos.svg" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
+  NixOS 
+</h3>
+
+
+It's generally easiest to follow the instructions at https://lvra.gitlab.io/docs/distros/nixos/ as Envision is currently unstable on NixOS and troubleshooting SteamVR can be tricky. 
+### Other options for installation
+You can also download the [Envision AppImage](https://gitlab.com/gabmus/envision/-/pipelines?ref=main&status=success) directly. Once downloaded, unzip the archive and you should find a file named Envision-x86_64.AppImage. Make it executable either from your file manager with right click > properties > "executable as program", or under permissions enable "is executable" (this depends on your file manager) OR, from the terminal: `chmod +x Envision-x86_64.AppImage`
+
+
+
+Double click the AppImage file to run it.
+![Envision App Image](/img/docs/envisionappimage.png)
+
+When you launch Envision, you will have to build a profile depending on what headset and setup you are using, check the [Envision website](https://lvra.gitlab.io/docs/fossvr/envision/) for instructions specific to what you have. You can take a look at [this section] of our Meta Quest setup video for an example using WiVRn.
+![Envision Build Profile](/img/docs/envisionbuildprofile.png)
+
+Once you have one of these options installed, a quick way to test it within the headset is by running the command `xrgears` and see if it works. [xrgears](https://gitlab.freedesktop.org/monado/demos/xrgears) is a demo that comes with Monado.
+
+:::tip
+If you run into any problems during installation, the [Meta Quest Walkthrough](quest-3-setup) may contain information helpful in regards to dependencies, firewalls and drivers.
+:::
+# ALVR
+
+Another option is ALVR, you can check the github repository for more information [https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR)
+
+# SteamVR
+
+If you'd like to use SteamVR, head on over to [https://lvra.gitlab.io/docs/steamvr/](https://lvra.gitlab.io/docs/steamvr/), although it is not the recommended way to use VR within Linux due to current poor support. 
+
