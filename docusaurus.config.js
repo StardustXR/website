@@ -4,7 +4,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
 	title: "Stardust XR",
-	tagline: "We Fight for the Users!",
+	tagline: "An Open Source 3D XR Environment for Linux!",
 	url: "https://stardustxr.org",
 	baseUrl: "/",
 	trailingSlash: false,
