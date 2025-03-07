@@ -39,11 +39,17 @@ AMD graphic cards do not require additional drivers.
 </h3>
 
 :::info
-You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg). You can install it using this command:
+You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).
+[Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
+```
+curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
+sudo rpm-ostree install terra-release
+```
+Other Fedora Editions can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
-:::
+:::  
 Then, install Envision using:
 ```
 sudo dnf install envision
