@@ -14,7 +14,7 @@ If you want to try Stardust in a window on your existing device you can skip thi
 :::note
 ![Envision](/img/docs/Envision_Monado.png)
 
-We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), as it is an easy to use GUI for utilizing [Monado](https://monado.dev/) (an Open-Source implementation of OpenXR for Linux) which is what you will most likely be using if you have a wired headset, and Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) for connecting to headsets like the Meta Quest wirelessly.
+We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), an easy to use GUI for utilizing [Monado](https://monado.dev/) which is what you likely use if you have a wired headset. Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) support for connecting to headsets like the Meta Quest wirelessly.
 :::
 
 Check the [hardware table](https://lvra.gitlab.io/docs/hardware/) (for Monado/WiVRn support) to ensure your hardware and headset are compatible. It is very likely you will need [Nvidia drivers](https://rpmfusion.org/Howto/NVIDIA) if that's what you are using. Check the link for the which model graphics card may require different drivers, but the most likely command you will need to run if you have a modern card is:
