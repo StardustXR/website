@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 # Full Installation 
-Unlike bundled [Telescope](Quickstart) that launches the Stardust XR server and a small selection of clients, the typical way to interact with Stardust XR currently is to first run the server, which will only give you a black void, as there are no applications or clients running within it. You can then launch any combination of the clients listed below, as they are all considered separate items but can run concurrently within the Stardust XR server.   
+Unlike [Telescope](Quickstart) that launches the Stardust XR server and a small selection of clients, the typical way to interact with Stardust is to first run the server, which only provides a void by default, as there are no applications or clients within it. You can then launch any combination of the clients listed below, as they are all considered separate items but can run concurrently inside Stardust.   
 <h3>
   <img 
     src="/img/docs/Fedora_logo.svg" 
