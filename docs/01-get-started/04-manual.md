@@ -54,7 +54,7 @@ Make sure all of the repositories that are cloned are on the same branch (e.g. a
 :::
 ### Server
 
-Clone the [Stardust XR server](https://github.com/StardustXR/server) `https://github.com/StardustXR/server`
+Clone the [Stardust XR Server](https://github.com/StardustXR/server) `https://github.com/StardustXR/server`
 
 Make sure to check the list of prerequisites. `Cargo build` and `Cargo run` within the cloned repo to start the server. As stated above, the Stardust XR server itself will simply load in with a black void until clients are loaded in. This behaviour can currently be modified by creating a `startup` file within the folder `~/.config/stardust/` to automate the loading in of clients, an example of which is shown [here](https://youtu.be/c6RyEYDz2iw?si=pL1zffNVsWocZHrc&t=788), and an example of is linked [here](https://github.com/cyberneticmelon/usefulscripts/blob/main/startup)
 
