@@ -69,7 +69,7 @@ You can also download the [Envision AppImage](https://gitlab.com/gabmus/envision
 
 
 
-Double click the AppImage file to run it.
+Then double click the file to run it.
 ![Envision App Image](/img/docs/envisionappimage.png)
 
 When you launch Envision, you will have to build a profile depending on what headset and setup you are using, check the [Envision website](https://lvra.gitlab.io/docs/fossvr/envision/) for instructions specific to what you have. You can take a look at [this section] of our Meta Quest setup video for an example using WiVRn.
