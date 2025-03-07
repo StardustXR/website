@@ -86,5 +86,5 @@ Another option is ALVR, you can check the GitHub repository for more information
 
 # SteamVR
 
-If you'd like to use SteamVR, head on over to [https://lvra.gitlab.io/docs/steamvr/](https://lvra.gitlab.io/docs/steamvr/), although it is not the recommended way to use VR within Linux due to current poor support. 
+If you'd like to use SteamVR, head over to [https://lvra.gitlab.io/docs/steamvr/](https://lvra.gitlab.io/docs/steamvr/), although it is not the recommended way to use VR within Linux due to poor support. 
 
