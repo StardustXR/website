@@ -15,7 +15,7 @@ The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultr
 
 
 # Nvidia & AMD
-AMD Graphics cards currently do not require drivers, but Nvidia graphics cards will need to install drivers [provided by RPM Fusion](https://rpmfusion.org/Howto/NVIDIA), which can be installed via:
+AMD Graphics cards do not require additional drivers, but Nvidia graphics cards will need to install drivers [provided by RPMFusion](https://rpmfusion.org/Howto/NVIDIA), which can be installed with:
 ```
 sudo dnf in akmod-nvidia
 ``` 
