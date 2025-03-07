@@ -8,7 +8,7 @@ This guide will help you set up your VR or AR headset for use with Stardust. Alt
 
 
 :::info
-If you want to test stardust in flatscreen mode in a window on your desktop without a headset or other OpenXR device, you can skip this step and start with [trying out telescope](Quickstart).
+If you want to try Stardust in a window on your existing device you can skip this step and checkout the  [Quick Start Guide](Quickstart).
 :::
 # Envision
 :::note
