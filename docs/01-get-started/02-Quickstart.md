@@ -57,6 +57,6 @@ To look around, hold down ***Shift*** and ***Right Click*** while moving the mou
 
 To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.
 
-If you click on the hexagon, the launcher will open up. Try dragging out one of the apps with the ***Mouse 5*** (Back) button. The small minus sign is Black Hole, if you click on it, it will grab any open window and store it away. Click it again and they will return to their original location.
+If you click on the hexagon, the launcher will open. Try dragging one of the apps with the ***Mouse 5*** (Back) button. The small minus sign is Black Hole, if you click it, it will grab any open window and store it away. Click it again and they will return to their original location.
 
 If you are already using OpenXR within Linux, launching `telescope` while it's running should launch it within your headset. If not, check further instructions for setting up OpenXR, or the other installation guides. 
