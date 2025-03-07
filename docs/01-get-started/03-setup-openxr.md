@@ -53,7 +53,7 @@ sudo dnf install envision
   Arch Linux 
 </h3>
 
-For Arch Linux, Envision is available via the [AUR](https://aur.archlinux.org/packages/envision-xr-git)
+For Arch Linux, Envision is available via the [AUR](https://aur.archlinux.org/packages/envision-xr-git). We suggest using an AUR helper, like Paru:
 ```
 paru -S envision-xr-git
 ```
