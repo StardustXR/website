@@ -4,13 +4,19 @@ sidebar_position: 5
 
 # Meta Quest Walkthrough 
 Do you have a Meta Quest and would like to try Stardust for yourself? Even if you don't have any experience with Linux, this full guide will get you started with Stardust! It is recommended that you install a version of Linux called [Ultramarine](https://ultramarine-linux.org/download/). We suggest Plasma Edition due to VRR and HDR support. Once you have it installed, you will mainly be using the terminal to install what you need. Linked below is a YouTube walkthrough:
-[![Youtube Tutorial](/img/docs/youtubethumb.png)](https://www.youtube.com/watch?v=Rgj9-9UwA2g)
-:::info
-Applies to Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora distributions, but you will need to download the [Terra repository](https://terra.fyralabs.com/): 
+[![Youtube Tutorial](/img/docs/youtubethumb.png)](https://www.youtube.com/watch?v=Rgj9-9UwA2g)  
+:::info  
+Applies to Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux) but you will need to download the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).  
+[Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
+```
+curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
+sudo rpm-ostree install terra-release
+```
+Other Fedora Editions can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
-The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.
+The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.  
 :::
 
 
