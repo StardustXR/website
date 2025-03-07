@@ -50,7 +50,7 @@ From there, you can launch the server with `stardust-xr-server`, then in another
 
 # Manual Build  
 :::caution
-Make sure all of the repositories that are cloned are on the same branch (e.g. all main or all dev branch) to ensure stardust protocol compatibility  
+Make sure all of the repositories that are cloned are on the same branch (e.g. all main or all dev branch) to ensure Stardust protocol compatibility  
 :::
 ### Server
 
