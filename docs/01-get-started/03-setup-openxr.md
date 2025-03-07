@@ -6,7 +6,6 @@ sidebar_position: 3
 
 This guide will help you set up your VR or AR headset for use with Stardust. Although support for many headsets on Linux is still under active development, there are a number of good options available. If you already have OpenXR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
 
-
 :::info  
 If you want to try Stardust in a window on your existing device you can skip this step and checkout the [Quick Start Guide](Quickstart).  
 :::  
@@ -68,12 +67,9 @@ paru -S envision-xr-git
   NixOS 
 </h3>
 
-
 On NixOS, it's generally easiest to follow the instructions at https://lvra.gitlab.io/docs/distros/nixos/ as Envision is currently unstable on NixOS and troubleshooting SteamVR can be tricky. 
 ### Other options for installation
 You can also download the [Envision AppImage](https://gitlab.com/gabmus/envision/-/pipelines?ref=main&status=success). Once downloaded, unzip the archive, you should find a file named Envision-x86_64.AppImage. You can do this from the properties menu in your file manager, or run `chmod +x Envision-x86_64.AppImage` in your terminal.
-
-
 
 Then double click the file to run it.
 ![Envision App Image](/img/docs/envisionappimage.png)
