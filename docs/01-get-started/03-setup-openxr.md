@@ -35,7 +35,7 @@ AMD graphic cards do not require additional drivers.
     alt="Ultramarine Logo" 
     style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
   />
-  Fedora/Ultramarine Linux
+  Fedora and derivatives (except Enterprise Linux)
 </h3>
 
 :::info
