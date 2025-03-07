@@ -19,16 +19,15 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.  
 :::
 
-
 # Nvidia & AMD
 AMD Graphics cards do not require additional drivers, but Nvidia graphics cards will need to install drivers [provided by RPMFusion](https://rpmfusion.org/Howto/NVIDIA), which can be installed with:
 ```
-sudo dnf in akmod-nvidia
+sudo dnf install akmod-nvidia
 ``` 
 # Envision
 The next step is to install [Envision](https://lvra.gitlab.io/docs/fossvr/envision/). Envision is a GUI that makes it easier to connect and run the Quest 3 (among other headsets) with [Monado](https://monado.dev/), an open source OpenXR implementation, and [WiVRn](https://github.com/WiVRn/WiVRn), a wireless streaming implementation that also works with the Quest 3. Envision comes pre-packaged with WiVRn. Envision can be installed via:
 ```
-sudo dnf in akmod-nvidia
+sudo dnf install akmod-nvidia
 ``` 
 # Vulkan Layers
 If you have an Nvidia graphics card, it is possible that you will need to install [Vulkan Layers](https://gitlab.freedesktop.org/monado/utilities/vulkan-layers) for Monado, although this may not be necessary depending on the driver version:
