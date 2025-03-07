@@ -23,7 +23,7 @@ You will need the [Terra repository](https://terra.fyralabs.com/), unless you ha
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 :::
-To do a full installation of Stardust XR on Fedora/Ultramarine run the following command:
+Then, run this command to install the Stardust XR group:
 ```
 dnf group install stardust-xr
 ```
