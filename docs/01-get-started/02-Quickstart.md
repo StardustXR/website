@@ -58,7 +58,6 @@ From here, just run `telescope -f` for flatscreen mode in your terminal!
 
 You will see a floating hexagon with the Stardust XR logo in the center, this is Hexagon Launcher.
 
-
 To look around, hold down ***Shift*** and ***Right Click*** while moving the mouse.
 
 To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.
