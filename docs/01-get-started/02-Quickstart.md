@@ -55,7 +55,7 @@ You will see a floating hexagon with the Stardust XR logo in the center, this is
 
 To look around, hold down ***Shift*** and ***Right Click*** while moving the mouse.
 
-To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up
+To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.
 
 If you click on the hexagon, the launcher will open up. Try dragging out one of the apps with the ***Mouse 5*** (Back) button. The small minus sign is Black Hole, if you click on it, it will grab any open window and store it away. Click it again and they will return to their original location.
 
