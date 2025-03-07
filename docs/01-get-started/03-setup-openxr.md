@@ -23,7 +23,7 @@ sudo dnf install akmod-nvidia
 sudo akmods
 # Wait for this to finish before rebooting, this may take up to 15 minutes
 ```
-AMD graphic cards currently do not require drivers.
+AMD graphic cards do not require additional drivers.
 <h3>
   <img 
     src="/img/docs/Fedora_logo.svg" 
