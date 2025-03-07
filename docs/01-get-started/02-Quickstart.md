@@ -19,7 +19,7 @@ The quickest way to get started with Stardust XR is to try out <span style={{ co
   Fedora and derivatives (except Enterprise Linux)
 </h1>
 
-:::info
+:::info  
 You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).
 [Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
 ```
