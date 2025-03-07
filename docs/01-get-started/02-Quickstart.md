@@ -59,4 +59,4 @@ To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving
 
 If you click on the hexagon, the launcher will open. Try dragging one of the apps with the ***Mouse 5*** (Back) button. The small minus sign is Black Hole, if you click it, it will grab any open window and store it away. Click it again and they will return to their original location.
 
-If you are already using OpenXR within Linux, launching `telescope` while it's running should launch it within your headset. If not, check further instructions for setting up OpenXR, or the other installation guides. 
+If you are already using OpenXR within Linux, running `telescope` while OpenXR is running should launch Stardust on your headset. If not, check further instructions for setting up OpenXR.
