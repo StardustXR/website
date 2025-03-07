@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Quick Start Guide  
 
-The quickest way to get started with Stardust XR, is to try out <span style={{ color: 'yellow' }}>Telescope</span>, this works with the device you already have, or a headset. It comes with the **Stardust XR server**, an app launcher called **Hexagon Launcher** and some helpful apps like **Flatland** to use your 2D apps inside Stardust,  and **Black Hole** to quickly tuck away your objects and apps (kind of like desktop peek on Windows.)
+The quickest way to get started with Stardust XR is to try out <span style={{ color: 'yellow' }}>Telescope</span>, this works with the device you already have, or a headset. It comes with the **Stardust XR server**, an app launcher called **Hexagon Launcher**, and some helpful apps like **Flatland** to use your 2D apps inside Stardust, and **Black Hole** to quickly tuck away your objects and apps (kind of like desktop peek on Windows).
 <h1>
   <img 
     src="/img/docs/Fedora_logo.svg" 
