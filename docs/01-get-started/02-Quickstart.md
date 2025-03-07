@@ -30,7 +30,7 @@ Other Fedora Editions can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
-:::
+:::  
 Then, install Telescope using:
 ```
 sudo dnf install telescope 
