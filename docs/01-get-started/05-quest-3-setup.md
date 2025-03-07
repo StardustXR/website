@@ -39,8 +39,8 @@ Next, Launch Envision, and in the drop down menu on the bottom, select the **WiV
 ```
 sudo dnf install libnotify-devel
 ``` 
-:::note
-Note that [Developer Mode](https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/) must be enabled on your Quest 3. The most streamlined way to do this is through the Meta Horizons app on [Android](https://play.google.com/store/apps/details?id=com.oculus.twilight&hl=en_US) or [iPhone](https://apps.apple.com/us/app/meta-horizon/id1366478176) 
+:::note  
+Note that [Developer Mode](https://developers.meta.com/horizon/documentation/native/android/mobile-device-setup/) must be enabled on your Quest 3. The most streamlined way to do this is through the Meta Horizons app on [Android](https://play.google.com/store/apps/details?id=com.oculus.twilight&hl=en_US) or [iPhone](https://apps.apple.com/us/app/meta-horizon/id1366478176)  
 :::
 
 # Installing WiVRn 
