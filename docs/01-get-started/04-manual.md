@@ -14,7 +14,7 @@ Unlike [Telescope](Quickstart) that launches the Stardust XR server and a small 
     alt="Ultramarine Logo" 
     style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
   />
-  Fedora/Ultramarine Linux
+  Fedora and derivatives (except Enterprise Linux)
 </h3>
 
 :::info
