@@ -34,7 +34,7 @@ sudo dnf install telescope
   Arch Linux 
 </h1>
 
-For Arch Linux, Stardust XR is available via the Arch Linux User Repository [AUR](https://aur.archlinux.org/packages/stardust-xr-telescope)
+On Arch Linux, Stardust XR is available in the Arch Linux User Repository [AUR](https://aur.archlinux.org/packages/stardust-xr-telescope). We suggest using an AUR helper, like Paru:
 ```
 paru -S stardust-xr-telescope
 ```
