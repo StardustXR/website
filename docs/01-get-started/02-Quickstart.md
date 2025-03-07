@@ -47,7 +47,7 @@ On NixOS use the [Nix package manager](https://nixos.org/download/#nix-install-l
 ```
 nix run github:StardustXR/telescope
 ```
-# After installation:
+# After Installation
 From here, just run `telescope -f` for flatscreen mode in your terminal of choice!
 
 You will see a floating hexagon with the Stardust XR logo within it, which is the Hexagon Launcher.
