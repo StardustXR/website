@@ -65,7 +65,7 @@ paru -S envision-xr-git
 
 On NixOS, it's generally easiest to follow the instructions at https://lvra.gitlab.io/docs/distros/nixos/ as Envision is currently unstable on NixOS and troubleshooting SteamVR can be tricky. 
 ### Other options for installation
-You can also download the [Envision AppImage](https://gitlab.com/gabmus/envision/-/pipelines?ref=main&status=success) directly. Once downloaded, unzip the archive and you should find a file named Envision-x86_64.AppImage. Make it executable either from your file manager with right click > properties > "executable as program", or under permissions enable "is executable" (this depends on your file manager) OR, from the terminal: `chmod +x Envision-x86_64.AppImage`
+You can also download the [Envision AppImage](https://gitlab.com/gabmus/envision/-/pipelines?ref=main&status=success). Once downloaded, unzip the archive, you should find a file named Envision-x86_64.AppImage. You can do this from the properties menu in your file manager, or run `chmod +x Envision-x86_64.AppImage` in your terminal.
 
 
 
