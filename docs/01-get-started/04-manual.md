@@ -60,7 +60,7 @@ Make sure to check the list of prerequisites. `Cargo build` and `Cargo run` with
 
 ### Clients
 
-After the server is running, you'll need to run some clients. Clone any of these, `cargo build` & then `cargo run` after the server is already running, and they will load into the Stardust XR server!  
+After the server is running, you'll need to run some clients. Clone any of these, `cargo build` & then `cargo run` after the server is already running, and they will load into the Stardust server!  
 
 Non-exhaustive list of clients:
 - [**flatland**](https://github.com/StardustXR/flatland): `https://github.com/StardustXR/flatland`  
