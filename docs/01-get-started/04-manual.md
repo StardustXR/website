@@ -18,7 +18,7 @@ Unlike [Telescope](Quickstart) that launches the Stardust XR server and a small 
 </h3>
 
 :::info
-You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org/download/) which comes pre-installed:
+You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg). You can install it using this command:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
