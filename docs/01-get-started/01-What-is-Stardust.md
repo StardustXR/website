@@ -5,7 +5,7 @@ sidebar_position: 1
 # What is Stardust XR?  
 [![Stardust XR Demo Reel](/img/docs/sizzlethumb.png)](https://www.youtube.com/watch?v=v2WblwbaLaA)
 
-Stardust XR is an XR [display server](https://itsfoss.com/display-server/) for Linux-based systems. It is functionally however, much more like a 3D environment, with applications ranging from simple 2D floating windows of your normal Linux programs, up to 3D applications that wouldn't otherwise be feasable outside of an XR environment. The design philosophy behind Stardust is what truly sets it apart, with user interface functions that not only work exclusively in an XR environment, but ones that push the user to understand the underlying connections in a way that can't be replicated with a keyboard and mouse. 
+Stardust XR is a [display server](https://itsfoss.com/display-server/) for VR and AR headsets on Linux-based systems. Stardust provides a 3D environment, where anything from 2D windows from your existing apps, to 3D apps built from objects can exist together in physical space. 
 
 Though Stardust XR isn't an operating system, because the different clients are all treated as independent objects, it is a truly unique experience to be able to place applications, both 2D and 3D, wherever you want in the area you are working in, whether that's at your desktop or an entire room 
 
