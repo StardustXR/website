@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Setup OpenXR Runtime 
 
-If you have a XR Headset and you'd like to use it with Stardust XR on Linux, the following are instructions on getting it up and running within a linux environment. Although XR support in Linux is still under active development, there are a number of good options available. If you already have XR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
+This guide will help you set up your VR or AR headset for use with Stardust. Although support for many headsets on Linux is still under active development, there are a number of good options available. If you already have OpenXR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
 
 
 :::info
