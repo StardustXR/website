@@ -16,7 +16,7 @@ The quickest way to get started with Stardust XR, is to try out <span style={{ c
     alt="Ultramarine Logo" 
     style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
   />
-  Fedora/Ultramarine Linux
+  Fedora and derivatives (except Enterprise Linux)
 </h1>
 
 :::info
