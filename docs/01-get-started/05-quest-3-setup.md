@@ -3,7 +3,7 @@ sidebar_position: 5
 ---
 
 # Meta Quest Walkthrough 
-Do you have a Meta Quest and would like to try Stardust XR for yourself? Even if you don't have any experience with Linux, this full guide will get you started with Stardust! It is recommended that you install a version of Linux called [Ultramarine](https://ultramarine-linux.org/download/), any version will do, but the KDE version is very popular for its user interface and ease of use. Once you have it installed, you will mainly be using the terminal command line interface to install what you need. Linked below is a Youtube walkthrough:
+Do you have a Meta Quest and would like to try Stardust for yourself? Even if you don't have any experience with Linux, this full guide will get you started with Stardust! It is recommended that you install a version of Linux called [Ultramarine](https://ultramarine-linux.org/download/). We suggest Plasma Edition due to VRR and HDR support. Once you have it installed, you will mainly be using the terminal to install what you need. Linked below is a YouTube walkthrough:
 [![Youtube Tutorial](/img/docs/youtubethumb.png)](https://www.youtube.com/watch?v=Rgj9-9UwA2g)
 :::info
 Applies to Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora distributions, but you will need to download the [Terra repository](https://terra.fyralabs.com/): 
