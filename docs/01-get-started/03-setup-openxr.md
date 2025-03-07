@@ -75,7 +75,7 @@ Then double click the file to run it.
 When you launch Envision, you will have to build a profile for your headset, check the [Envision website](https://lvra.gitlab.io/docs/fossvr/envision/) for instructions specific to what you have. You can take a look at [this section] of our Meta Quest setup video for an example using WiVRn.
 ![Envision Build Profile](/img/docs/envisionbuildprofile.png)
 
-Once you have one of these options installed, a quick way to test it within the headset is by running the command `xrgears` and see if it works. [xrgears](https://gitlab.freedesktop.org/monado/demos/xrgears) is a demo that comes with Monado.
+Once you have one of these options installed, a quick way to test on the headset is by running `xrgears`. [xrgears](https://gitlab.freedesktop.org/monado/demos/xrgears) is a demo that comes with Monado.
 
 :::tip
 If you run into any problems during installation, the [Meta Quest Walkthrough](quest-3-setup) may contain information helpful in regards to dependencies, firewalls and drivers.
