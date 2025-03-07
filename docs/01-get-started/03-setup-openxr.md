@@ -16,7 +16,7 @@ If you want to try Stardust in a window on your existing device you can skip thi
 We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), an easy to use GUI for utilizing [Monado](https://monado.dev/) which is what you likely use if you have a wired headset. Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) support for connecting to headsets like the Meta Quest wirelessly.  
 :::
 
-Check the [hardware table](https://lvra.gitlab.io/docs/hardware/) (for Monado/WiVRn support) to ensure your hardware and headset are compatible. If you're using an Nvidia card, you'll need to install [proprietary drivers]((https://rpmfusion.org/Howto/NVIDIA). If you're using a modern Nvidia card on Fedora (with RPMFusion) or Ultramarine, this command will install the driver:
+Check the [hardware table](https://lvra.gitlab.io/docs/hardware/) (for Monado/WiVRn support) to ensure your hardware and headset are compatible. If you're using an Nvidia card, you'll need to install [proprietary drivers](https://rpmfusion.org/Howto/NVIDIA). If you're using a modern Nvidia card on Fedora (with RPMFusion) or Ultramarine, this command will install the driver:
 ```
 sudo dnf install akmod-nvidia
 sudo akmods
