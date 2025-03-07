@@ -25,7 +25,7 @@ You will need the [Terra repository](https://terra.fyralabs.com/), unless you ha
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 :::
-In your terminal, run:
+Then, install Telescope using:
 ```
 sudo dnf install telescope 
 ``` 
