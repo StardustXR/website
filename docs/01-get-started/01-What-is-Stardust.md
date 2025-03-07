@@ -7,7 +7,6 @@ sidebar_position: 1
 
 Stardust XR is a [display server](https://itsfoss.com/display-server/) for VR and AR headsets on Linux-based systems. Stardust provides a 3D environment, where anything from 2D windows from your existing apps, to 3D apps built from objects can exist together in physical space. 
 
-Though Stardust XR isn't an operating system, because the different clients are all treated as independent objects, it is a truly unique experience to be able to place applications, both 2D and 3D, wherever you want in the area you are working in, whether that's at your desktop or an entire room 
 
 If you'd like to quickly try out Stardust XR on your desktop without the need to setup a headset, head to the [Quick Start](Quickstart) guide. If you need to set up your VR headset within Linux, let's [Setup OpenXR Runtime](setup-openxr). If you already have your heatset setup, head to the [Full Stardust Installation](manual) page. If you've never used Linux before (or even if you have), and you have a Meta Quest device, we've created a [full walkthrough to get you started playing with Stardust](quest-3-setup)!
 
