@@ -17,7 +17,7 @@ Unlike [Telescope](Quickstart) that launches the Stardust XR server and a small 
   Fedora and derivatives (except Enterprise Linux)
 </h3>
 
-:::info
+:::info  
 You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).
 [Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
 ```
@@ -55,7 +55,7 @@ paru -s stardust-xr-server
 From there, you can launch the server with `stardust-xr-server`, then in another terminal window or tab, run any other clients you need. We recommend `flatland` and `hexagon-launcher`.
 
 # Manual Build  
-:::caution
+:::caution  
 Make sure all of the repositories that are cloned are on the same branch (e.g. all main or all dev branch) to ensure Stardust protocol compatibility  
 :::
 ### Server
