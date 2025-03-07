@@ -10,7 +10,7 @@ Applies to Quest, Quest 2, Quest 3, and Quest Pro. These instructions should wor
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
-The setup video is done with a Meta Quest 3, and with [Ultramarine Linux](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.
+The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.
 :::
 
 
