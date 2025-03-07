@@ -25,7 +25,7 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 :::
 Then, run this command to install the Stardust XR group:
 ```
-dnf group install stardust-xr
+sudo dnf group install stardust-xr
 ```
 <h3>
   <img src="/img/docs/arch.png" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
