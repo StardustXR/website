@@ -82,7 +82,7 @@ If you run into any problems during installation, the [Meta Quest Walkthrough](q
 :::
 # ALVR
 
-Another option is ALVR, you can check the github repository for more information [https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR)
+Another option is ALVR, you can check the GitHub repository for more information [https://github.com/alvr-org/ALVR](https://github.com/alvr-org/ALVR)
 
 # SteamVR
 
