@@ -7,14 +7,14 @@ sidebar_position: 3
 This guide will help you set up your VR or AR headset for use with Stardust. Although support for many headsets on Linux is still under active development, there are a number of good options available. If you already have OpenXR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
 
 
-:::info
-If you want to try Stardust in a window on your existing device you can skip this step and checkout the [Quick Start Guide](Quickstart).
-:::
+:::info  
+If you want to try Stardust in a window on your existing device you can skip this step and checkout the [Quick Start Guide](Quickstart).  
+:::  
 # Envision
-:::note
+:::note  
 ![Envision](/img/docs/Envision_Monado.png)
 
-We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), an easy to use GUI for utilizing [Monado](https://monado.dev/) which is what you likely use if you have a wired headset. Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) support for connecting to headsets like the Meta Quest wirelessly.
+We highly recommend using [Envision](https://lvra.gitlab.io/docs/fossvr/envision/), an easy to use GUI for utilizing [Monado](https://monado.dev/) which is what you likely use if you have a wired headset. Envision also comes with [WiVRn](https://github.com/WiVRn/WiVRn) support for connecting to headsets like the Meta Quest wirelessly.  
 :::
 
 Check the [hardware table](https://lvra.gitlab.io/docs/hardware/) (for Monado/WiVRn support) to ensure your hardware and headset are compatible. If you're using an Nvidia card, you'll need to install [proprietary drivers]((https://rpmfusion.org/Howto/NVIDIA). If you're using a modern Nvidia card on Fedora (with RPMFusion) or Ultramarine, this command will install the driver:
