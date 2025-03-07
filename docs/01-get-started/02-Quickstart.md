@@ -50,7 +50,7 @@ nix run github:StardustXR/telescope
 # After Installation
 From here, just run `telescope -f` for flatscreen mode in your terminal!
 
-You will see a floating hexagon with the Stardust XR logo within it, which is the Hexagon Launcher.
+You will see a floating hexagon with the Stardust XR logo in the center, this is Hexagon Launcher.
 
 
 To look around, hold down ***Shift*** and hold down ***Right Click***
