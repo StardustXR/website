@@ -52,8 +52,8 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 :::  
 Then, install Envision using:
 ```
-sudo dnf install envision 
-``` 
+sudo dnf install envision
+```
 <h3>
   <img src="/img/docs/arch.png" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
   Arch Linux 
