@@ -27,7 +27,7 @@ sudo dnf install akmod-nvidia
 # Envision
 The next step is to install [Envision](https://lvra.gitlab.io/docs/fossvr/envision/). Envision is a GUI that makes it easier to connect and run the Quest 3 (among other headsets) with [Monado](https://monado.dev/), an open source OpenXR implementation, and [WiVRn](https://github.com/WiVRn/WiVRn), a wireless streaming implementation that also works with the Quest 3. Envision comes pre-packaged with WiVRn. Envision can be installed via:
 ```
-sudo dnf install akmod-nvidia
+sudo dnf install envision
 ``` 
 # Vulkan Layers
 If you have an Nvidia graphics card, it is possible that you will need to install [Vulkan Layers](https://gitlab.freedesktop.org/monado/utilities/vulkan-layers) for Monado, although this may not be necessary depending on the driver version:
