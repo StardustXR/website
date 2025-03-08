@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Quick Start Guide  
 
-The quickest way to get started with Stardust XR is to try out <span style={{ color: 'yellow' }}>Telescope</span>, this works with the device you already have, or a headset. It comes with the **Stardust XR server**, an app launcher called **Hexagon Launcher**, and some helpful apps like **Flatland** to use your 2D apps inside Stardust, and **Black Hole** to quickly tuck away your objects and apps (kind of like desktop peek on Windows).
+The quickest way to get started with Stardust XR is to try out <span style={{ color: 'yellow' }}>Telescope</span>. This works with the device you already have, or a headset. It comes with the **Stardust XR server**, an app launcher called **Hexagon Launcher**, and some helpful apps like **Flatland** to use your 2D apps inside Stardust, and **Black Hole** to quickly tuck away your objects and apps (kind of like desktop peek on Windows).
 <h1>
   <img 
     src="/img/docs/Fedora_logo.svg" 
@@ -20,13 +20,14 @@ The quickest way to get started with Stardust XR is to try out <span style={{ co
 </h1>
 
 :::info  
-You will need the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).
-[Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
+Stardust XR is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg), this reposoitory comes pre-installed, otherwise you can add the repository.
+
+If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
 ```
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
 sudo rpm-ostree install terra-release
 ```
-Other Fedora Editions can directly install terra-release:
+Standard Fedora Editions and derrivatives can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
@@ -40,7 +41,7 @@ sudo dnf install telescope
   Arch Linux 
 </h1>
 
-On Arch Linux, Stardust XR is available in the Arch Linux User Repository [AUR](https://aur.archlinux.org/packages/stardust-xr-telescope). We suggest using an AUR helper, like Paru:
+On Arch Linux, Stardust XR is available in the Arch Linux User Repository [AUR](https://aur.archlinux.org/packages/stardust-xr-telescope). We suggest using an [AUR helper](https://wiki.archlinux.org/title/AUR_helpers), like Paru:
 ```
 paru -S stardust-xr-telescope
 ```
@@ -49,7 +50,7 @@ paru -S stardust-xr-telescope
   NixOS 
 </h1>
 
-On NixOS use the [Nix package manager](https://nixos.org/download/#nix-install-linux), make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
+On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-linux) Make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
 ```
 nix run github:StardustXR/telescope
 ```
