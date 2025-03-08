@@ -6,13 +6,14 @@ sidebar_position: 5
 Do you have a Meta Quest and would like to try Stardust for yourself? Even if you don't have any experience with Linux, this full guide will get you started with Stardust! It is recommended that you install a version of Linux called [Ultramarine](https://ultramarine-linux.org/download/). We suggest Plasma Edition due to VRR and HDR support. Once you have it installed, you will mainly be using the terminal to install what you need. Linked below is a YouTube walkthrough:
 [![Youtube Tutorial](/img/docs/youtubethumb.png)](https://www.youtube.com/watch?v=Rgj9-9UwA2g)  
 :::info  
-Applies to Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux) but you will need to download the [Terra repository](https://terra.fyralabs.com/), unless you have [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg).  
-[Fedora Atomic Editions](https://fedoraproject.org/atomic-desktops/) will need to run the following command:
+This applies to the Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux). If you are using [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg), this reposoitory comes pre-installed, otherwise you will need to add the repository:
+
+If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
 ```
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
 sudo rpm-ostree install terra-release
 ```
-Other Fedora Editions can directly install terra-release:
+Standard Fedora Editions and derrivatives can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
@@ -32,7 +33,7 @@ sudo dnf install envision
 # Vulkan Layers
 If you have an Nvidia graphics card, it is possible that you will need to install [Vulkan Layers](https://gitlab.freedesktop.org/monado/utilities/vulkan-layers) for Monado, although this may not be necessary depending on the driver version:
 ```
-sudo dnf install -y monado-vulkan-layers
+sudo dnf install monado-vulkan-layers
 ``` 
 Next, Launch Envision, and in the drop down menu on the bottom, select the **WiVRn profile** and click **Build Profile**. It'll give you a list of dependencies to install, so copy the command and run it. After they are installed, there's one extra dependency to add manually.
 ```
