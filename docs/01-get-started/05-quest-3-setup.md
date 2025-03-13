@@ -18,7 +18,7 @@ Do you have a Meta Quest and would like to try Stardust for yourself? Even if yo
 </div>
 
 :::info  
-This applies to the Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux). If you are using [Ultramarine Linux](https://ultramarine-linux.org) or [Bazzite](https://bazzite.gg), this reposoitory comes pre-installed, otherwise you will need to add the repository:
+This applies to the Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this reposoitory comes pre-installed, otherwise you will need to add the repository:
 
 If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
 ```
