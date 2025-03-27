@@ -25,7 +25,7 @@ If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desk
 curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
 sudo rpm-ostree install terra-release
 ```
-Standard Fedora Editions and derrivatives can directly install terra-release:
+Standard Fedora Editions and derivatives can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
