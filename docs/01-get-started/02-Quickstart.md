@@ -55,14 +55,16 @@ On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-
 nix run github:StardustXR/telescope
 ```
 # After Installation
-From here, just run `telescope -f` for flatscreen mode in your terminal!
+From here, just run `telescope -f` for flatscreen mode in your terminal! 
 
 You will see a floating hexagon with the Stardust XR logo in the center, this is Hexagon Launcher.
+To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.  
+![WASD Q E Look around](/img/updated_flat_wasd.GIF)
 
-To look around, hold down ***Shift*** and ***Right Click*** while moving the mouse.
+To look around, hold down ***Shift*** and ***Right Click*** while moving the mouse.  
+![Look around](/img/updated_flat_look.GIF)
 
-To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.
-
-If you click on the hexagon, the launcher will open. Try dragging one of the apps with the ***Mouse 5*** (Back) button. The small minus sign is Black Hole, if you click it, it will grab any open window and store it away. Click it again and they will return to their original location.
+If you click on the hexagon, the launcher will open. Try dragging one of the apps with `Shift + ~`. The small minus sign is Black Hole, if you click it, it will grab any open window and store it away. Click it again and they will return to their original location.  
+![Flat drag](/img/updated_flat_drag.GIF)
 
 If you are already using OpenXR within Linux, running `telescope` while OpenXR is running should launch Stardust on your headset. If not, check further instructions for setting up OpenXR.
