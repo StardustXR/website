@@ -1,7 +1,6 @@
 ---
 title: Stardust XR Philosophy
-author: Nova King
-authorTwitter: https://x.com/technobaboo
+author: Cyberneticmelon
 ---
 -----
 # Complexity ≠ Difficulty
@@ -18,7 +17,7 @@ sometimes struggle with, let alone the mechatronic limitations when it comes to 
 
 You, however, can easily and intuitively move things around and organize them in a spatial environment without needing to directly
 think about it, which provides a unique and newly available avenue of exploration in the XR and VR space, and it is this innate ability 
-that Stardust XR aims to harness in it's design philosophy, by focusing in on direct interactions that map to underlying functionality. 
+that [Nova](https://ordinary.cafe/@technobaboo) aims to harness with Stardust XR it's design philosophy, by focusing in on direct interactions that map to underlying functionality. 
 
 # Direct Interaction Vs Indirect Action
 
