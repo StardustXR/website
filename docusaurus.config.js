@@ -13,7 +13,7 @@ module.exports = {
 	favicon: "img/favicon.ico",
 	organizationName: "StardustXR", // Usually your GitHub org/user name.
 	projectName: "website", // Usually your repo name.
-	scripts: [{src: 'https://plausible.io/js/script.hash.outbound-links.js', defer: true, 'data-domain': 'stardustxr.org'}],
+	scripts: [{src: 'https://plausible.fyralabs.com/js/script.hash.outbound-links.js', defer: true, 'data-domain': 'stardustxr.org'}],
 	markdown: {
 		mermaid: true,
 	},
