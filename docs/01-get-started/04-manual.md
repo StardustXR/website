@@ -71,7 +71,7 @@ After the server is running, you'll need to run some clients. Clone any of these
 
 Non-exhaustive list of clients:
 - [**flatland**](https://github.com/StardustXR/flatland): `https://github.com/StardustXR/flatland`  
-3D panel UI (like window manager) for intercting with all your 2D apps
+3D panel UI (like window manager) for interacting with all your 2D apps
 - [**protostar**](https://github.com/StardustXR/protostar): `https://github.com/StardustXR/protostar`  
 App launcher library and examples including futuristic Hexagon Launcher
 - [**black hole**](https://github.com/StardustXR/black-hole): `https://github.com/StardustXR/black-hole`  
