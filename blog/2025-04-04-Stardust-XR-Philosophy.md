@@ -56,4 +56,6 @@ Stardust XR is that system 🍉
 ></iframe>
 </div>  
 
+If you'd like to try out Stardust XR, [click here](https://stardustxr.org/docs/get-started/What-is-Stardust)  
+
 [Become a sponsor](https://github.com/sponsors/technobaboo) and help Nova expand Stardust XR! Stardust XR is also actively looking for help with development, check out the [github](https://github.com/StardustXR) page for more information.
