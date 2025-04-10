@@ -16,7 +16,7 @@
         <content type="html"><![CDATA[<hr><h1>Complexity ≠ Difficulty</h1><p>In most modern user interaction there is a massive disconnect between the interface and the underlying system that is running.
 Although some user interfaces may look well designed, often times they have papered over how things work instead of unfolding the complexity
 in a way that is more understandable.
-The average person may not easily understand why their computer is doing what it is doing, and relegate this knowledge to the realm of programmers
+The average person may not easily understand why their computer is doing what it is doing, and delegate this knowledge to the realm of programmers
 or more technically inclined people.</p><p>High complexity, however, does not innately indicate that something is highly difficult. Take all the objects lying in front of you when
 you're working at a desk. To move all of those items around is a highly complex task that even modern visual tracking algorithms can
 sometimes struggle with, let alone the mechatronic limitations when it comes to robotics, outside of tightly controlled environments.</p><p>You, however, can easily and intuitively move things around and organize them in a spatial environment without needing to directly
