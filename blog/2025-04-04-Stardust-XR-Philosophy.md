@@ -17,7 +17,7 @@ sometimes struggle with, let alone the mechatronic limitations when it comes to 
 
 You, however, can easily and intuitively move things around and organize them in a spatial environment without needing to directly
 think about it, which provides a unique and newly available avenue of exploration in the XR and VR space, and it is this innate ability 
-that [Nova](https://ordinary.cafe/@technobaboo) aims to harness with Stardust XR's design philosophy, by focusing in on direct interactions that map to underlying functionality. 
+that we aim to harness with Stardust XR's design philosophy, by focusing in on direct interactions that map to underlying functionality. 
 
 # Direct Interaction Vs Indirect Action
 
@@ -56,4 +56,4 @@ Stardust XR is that system 🍉
 ></iframe>
 </div>  
 
-You can [become a sponsor](https://github.com/sponsors/technobaboo) and help Nova expand Stardust XR! Stardust XR is also currently looking for help with development, check out the [github](https://github.com/StardustXR) page for more information.
+[Become a sponsor](https://github.com/sponsors/technobaboo) and help Nova expand Stardust XR! Stardust XR is also actively looking for help with development, check out the [github](https://github.com/StardustXR) page for more information.
