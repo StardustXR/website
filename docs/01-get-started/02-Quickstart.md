@@ -50,7 +50,7 @@ paru -S stardust-xr-telescope
   NixOS 
 </h1>
 
-On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-linux) Make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
+On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-linux). Make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
 ```
 nix run github:StardustXR/telescope
 ```
