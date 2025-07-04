@@ -18,4 +18,4 @@ Stardust XR is a [display server](https://itsfoss.com/display-server/) for VR an
 
 If you'd like to try Stardust XR on your existing device without a headset, head to the [Quick Start](Quickstart) guide. If you'd like to use a VR headset, check out [Set up OpenXR Runtime](setup-openxr). If you already have your headset set up, head to the [Full Stardust Installation](manual) page. If you've a beginner, and have a Meta Quest device, we've created a [full walkthrough to get you started playing with Stardust](quest-3-setup)!
 
-Stardust XR is acitvely looking for help with development to expand the project. You can also [become a sponsor](https://github.com/sponsors/technobaboo).
+Stardust XR is actively looking for help with development to expand the project. You can also [become a sponsor](https://github.com/sponsors/technobaboo).
