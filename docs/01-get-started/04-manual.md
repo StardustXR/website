@@ -70,20 +70,24 @@ Make sure to check the list of prerequisites. Run `cargo build` and `cargo run` 
 After the server is running, you'll need to run some clients. Clone any of these, `cargo build` & then `cargo run` after the server is already running, and they will load into the Stardust server!  
 
 Non-exhaustive list of clients:
-- [**flatland**](https://github.com/StardustXR/flatland): `https://github.com/StardustXR/flatland`  
-3D panel UI (like window manager) for interacting with all your 2D apps
-- [**protostar**](https://github.com/StardustXR/protostar): `https://github.com/StardustXR/protostar`  
-App launcher library and examples including futuristic Hexagon Launcher
+- [**armillary**](https://github.com/StardustXR/Armillary): `https://github.com/StardustXR/Armillary`  
+A 3D model viewer for Stardust XR; rotate, move, and display models in your XR space
+- [**atmosphere**](https://github.com/StardustXR/atmosphere): `https://github.com/StardustXR/atmosphere`  
+3D environment with natural momentum-based movement
 - [**black hole**](https://github.com/StardustXR/black-hole): `https://github.com/StardustXR/black-hole`  
 Universal minimization of Stardust objects
+- [**comet**](https://github.com/StardustXR/comet): `https://github.com/StardustXR/comet`  
+Write in 3D wherever you want amongst your other apps!
+- [**flatland**](https://github.com/StardustXR/flatland): `https://github.com/StardustXR/flatland`  
+3D panel UI (like window manager) for interacting with all your 2D apps
 - [**gravity**](https://github.com/StardustXR/gravity): `https://github.com/StardustXR/gravity`  
 Launch programs with a certain offset in 3D space
 - [**magnetar**](https://github.com/StardustXR/magnetar): `https://github.com/StardustXR/magnetar`  
 Example workspaces client
-- [**atmosphere**](https://github.com/StardustXR/atmosphere): `https://github.com/StardustXR/atmosphere`  
-3D environment with natural momentum-based movement
-- [**comet**](https://github.com/StardustXR/comet): `https://github.com/StardustXR/cometAnnotate`  
-Write in 3D wherever you want amongst your other apps!
+- [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): `https://github.com/StardustXR/non-spatial-input`  
+Provides utilities to port keyboard, mouse, and other input methods like libinput into Stardust XR
+- [**protostar**](https://github.com/StardustXR/protostar): `https://github.com/StardustXR/protostar`  
+App launcher library and examples including futuristic Hexagon Launcher
 
 ### Installation Script
 
