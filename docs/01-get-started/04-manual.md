@@ -53,7 +53,7 @@ paru -s stardust-xr-protostar
 paru -s stardust-xr-server
 ```
 
-From there, you can launch the server with `stardust-xr-server`, then in another terminal window or tab, run any other clients you need. We recommend `flatland` and `hexagon-launcher`.
+From there, you can launch Stardust with `telescope`, then in another terminal window or tab, run any other clients you need. We recommend `flatland` and `hexagon-launcher`.
 
 # Manual Build  
 :::caution  
