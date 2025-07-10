@@ -17,20 +17,7 @@ Do you have a Meta Quest and would like to try Stardust for yourself? Even if yo
 ></iframe>
 </div>
 
-:::info  
-This applies to the Quest, Quest 2, Quest 3, and Quest Pro. These instructions should work on all Fedora derivatives (excluding Enterprise Linux). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this reposoitory comes pre-installed, otherwise you will need to add the repository:
-
-If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
-```
-curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
-sudo rpm-ostree install terra-release
-```
-Standard Fedora Editions and derivatives can directly install terra-release:
-```
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-```
 The setup video is done with a Meta Quest 3, and with [Ultramarine](https://ultramarine-linux.org/download/), a Fedora based distribution. Ultramarine comes with the Terra repository pre-installed. You can follow [these instructions](https://wiki.ultramarine-linux.org/en/setup/getting/) to install a version of Ultramarine.  
-:::
 
 # Nvidia & AMD
 AMD Graphics cards do not require additional drivers, but Nvidia graphics cards will need to install drivers [provided by RPMFusion](https://rpmfusion.org/Howto/NVIDIA), which can be installed with:
@@ -38,10 +25,8 @@ AMD Graphics cards do not require additional drivers, but Nvidia graphics cards 
 sudo dnf install akmod-nvidia
 ``` 
 # Envision
-The next step is to install [Envision](https://lvra.gitlab.io/docs/fossvr/envision/). Envision is a GUI that makes it easier to connect and run the Quest 3 (among other headsets) with [Monado](https://monado.dev/), an open source OpenXR implementation, and [WiVRn](https://github.com/WiVRn/WiVRn), a wireless streaming implementation that also works with the Quest 3. Envision comes pre-packaged with WiVRn. Envision can be installed via:
-```
-sudo dnf install envision
-``` 
+The next step is to install [Envision](https://lvra.gitlab.io/docs/fossvr/envision/). Envision is a GUI that makes it easier to connect and run the Quest 3 (among other headsets) with [Monado](https://monado.dev/), an open source OpenXR implementation, and [WiVRn](https://github.com/WiVRn/WiVRn), a wireless streaming implementation that also works with the Quest 3. Envision comes pre-packaged with WiVRn. For install instructions, check out the [Setup Open XR Runtime](setup-openxr) guide.
+
 # Vulkan Layers
 If you have an Nvidia graphics card, it is possible that you will need to install [Vulkan Layers](https://gitlab.freedesktop.org/monado/utilities/vulkan-layers) for Monado, although this may not be necessary depending on the driver version:
 ```
@@ -76,13 +61,11 @@ sudo firewall-cmd --reload
 ``` 
 
 # Stardust XR
-Now that we've set up the Quest 3 to be able to connect to your linux distribution via Envision/WiVRn, we can install Stardust XR!
-```
-sudo dnf group install stardust-xr
-```
+Now that we've set up the Quest 3 to be able to connect to your linux distribution via Envision/WiVRn, we can install Stardust XR! Check the [Full Installation](manual) guide on how to install Stardust XR.
+
 Once installed, you'll have to launch WiVRN within the headset. On the bottom right of the Quest 3 menu, go to Library > Unknown Sources, and you'll see the WiVRn app. Once you're loaded up, click the Start button at the top of Envision on your computer, and you'll be greeted with a PIN for firs time setup. Back in the Quest 3, tap Connect, and enter the PIN, and you should see "Connection ready, Start a VR application on Ultramarine"
 
-For the quickest way to test Stardust XR, run the command
+For the quickest way to test Stardust XR, run the telescope command:
 ```
 telescope
 ```
