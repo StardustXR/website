@@ -7,7 +7,7 @@ sidebar_position: 3
 This guide will help you set up your VR or AR headset for use with Stardust. Although support for many headsets on Linux is still under active development, there are a number of good options available. If you already have OpenXR set up on your Linux distribution, head to the [Full Installation](manual) page to get Stardust XR installed. 
 
 :::info  
-If you want to try Stardust in a window on your existing device you can skip this step and checkout the [Quick Start Guide](Quickstart).  
+If you want to try Stardust in a window on your existing device you can skip this step and checkout the [Full installation](manual) guide.  
 :::  
 # Envision
 :::note  

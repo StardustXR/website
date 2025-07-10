@@ -112,7 +112,7 @@ If you have all the correct dependencies, we've created a [script](https://githu
 
 # After Installation
 
-You can either use [Telescope](Quickstart) to launch the Stardust XR server and a small selection of clients (`telescope` in your terminal, or `telescope -f` for flatscreen mode), or you can run the server directly, which only provides a void by default, as there are no applications or clients within it. You can then launch any combination of the clients (listed above), as they are all considered separate items but can run concurrently inside Stardust.
+You can either use `Telescope` to launch the Stardust XR server and a small selection of clients (`telescope` in your terminal, or `telescope -f` for flatscreen mode), or you can run the server directly, which only provides a void by default, as there are no applications or clients within it. You can then launch any combination of the clients (listed above), as they are all considered separate items but can run concurrently inside Stardust.
 
 You will see a floating hexagon with the Stardust XR logo in the center, this is Hexagon Launcher.
 To move around, hold down ***Shift*** and ***W A S D***, with ***Q*** for moving down and ***E*** for moving up.  
