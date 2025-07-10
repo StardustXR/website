@@ -34,26 +34,45 @@ AMD graphic cards do not require additional drivers.
     alt="Ultramarine Logo" 
     style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
   />
-  Fedora and derivatives (except Enterprise Linux)
+  Fedora and Derivatives
 </h3>
 
-:::info
-Envision is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this repository comes pre-installed, otherwise you will need to add the repository:
+:::info  
+envision is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this repository comes pre-installed, otherwise you will need to add the repository:
 
-If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derivative you will need to run the following command:
-```
-curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
-sudo rpm-ostree install terra-release
-```
 Standard Fedora Editions and derivatives can directly install terra-release:
 ```
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
+
+If you are using [RHEL10](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux-10) or derrivative you will need to first the EPEL repos, which may be installed with:
+```
+sudo dnf install 'https://dl.fedoraproject.org/pub/epel/epel-release-latest-$releasever.noarch.rpm'
+```
+
+Then install terra-release:
+
+```
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
+```
+
+If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
+```
+curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
+sudo rpm-ostree install terra-release
+```
 :::  
-Then, install Envision using:
+Then, run this command to install envision:
 ```
-sudo dnf install envision
+sudo dnf group install envision
 ```
+
+If using a Fedora Atomic/Universal Blue based image, run the following command to install envision:
+
+```
+sudo rpm-ostree install envision
+```
+
 <h3>
   <img src="/img/docs/arch.png" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
   Arch Linux 
@@ -89,5 +108,4 @@ Another option is ALVR, you can check the GitHub repository for more information
 
 # SteamVR
 
-If you'd like to use SteamVR, head over to [https://lvra.gitlab.io/docs/steamvr/](https://lvra.gitlab.io/docs/steamvr/), although it is not the recommended way to use VR within Linux due to poor support. 
-
+If you'd like to use SteamVR, head over to [https://lvra.gitlab.io/docs/steamvr/](https://lvra.gitlab.io/docs/steamvr/), although it is not the recommended way to use VR within Linux due to poor support.

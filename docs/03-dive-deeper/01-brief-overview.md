@@ -85,13 +85,16 @@ graph LR
 
 ## Projects & Components
 
-- [**telescope**](https://github.com/StardustXR/telescope): Stable stardust setup for quick and easy usage
-- [**server**](https://github.com/StardustXR/server): Reference implementation of the StardustXR server (similar to Xorg)
-- [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
-- [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
-- [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
+- [**armillary**](https://github.com/StardustXR/Armillary): A 3D model viewer for Stardust XR; rotate, move, and display models in your XR space 
+- [**atmosphere**](https://github.com/StardustXR/atmosphere): 3D environment with natural momentum-based movement
 - [**black hole**](https://github.com/StardustXR/black-hole): Universal minimization of Stardust objects
+- [**comet**](https://github.com/StardustXR/comet): Annotate in 3D wherever you want amongst your other apps!
+- [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
+- [**flatland**](https://github.com/StardustXR/flatland): Allows Starust XR to run 2D linux applications 
 - [**gravity**](https://github.com/StardustXR/gravity): Launch programs with a certain offset in 3D space
 - [**magnetar**](https://github.com/StardustXR/magnetar): Example workspaces client
-- [**atmosphere**](https://github.com/StardustXR/atmosphere): 3D environment with natural momentum-based movement
-- [**comet**](https://github.com/StardustXR/comet): Annotate in 3D wherever you want amongst your other apps!
+- [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): Provides utilities to port keyboard, mouse, and other input methods like libinput into Stardust XR
+- [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
+- [**server**](https://github.com/StardustXR/server): Reference implementation of the StardustXR server (similar to Xorg)
+- [**telescope**](https://github.com/StardustXR/telescope): Stable stardust setup for quick and easy usage
+- [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
