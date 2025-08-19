@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #fdfdfd;
+  color: #333;
+}
+header {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0.5rem;
+}
+header nav a {
+  color: #ffd400;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+}
+pre {
+  background: #f4f4f4;
+  padding: 0.5rem;
+  overflow-x: auto;
+}
