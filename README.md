@@ -1,33 +1,21 @@
-# Website
+# Stardust XR Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This repository contains a minimal static website for the Stardust XR project.
 
-## Installation
+## Usage
 
-```console
-yarn install
+No build tools are required. Open `index.html` in your browser or serve the
+folder with any static web server.
+
+## Documentation
+
+Markdown files live in the `docs/` directory. The docs page loads them on demand
+using the [Marked](https://marked.js.org/) library. To link to a document, use a
+URL of the form:
+
+```
+/docs/#path/to/file
 ```
 
-## Local Development
-
-```console
-yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```console
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-```console
-GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Adding a new document is as easy as dropping a `.md` file into the `docs`
+folder.
