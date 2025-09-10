@@ -62,7 +62,7 @@ sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr
 </h3>
 
 ```
-paru -s stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-magnetar stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server stardust-xr-telescope
+paru -S stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-magnetar stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server stardust-xr-telescope
 ```
 
 On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-linux). Make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
