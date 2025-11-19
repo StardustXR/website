@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkstardust_website=globalThis.webpackChunkstardust_website||[]).push([[7472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Stardust XR Philosophy","permalink":"/blog/2025/04/04/Stardust-XR-Philosophy","unlisted":false,"date":"2025-04-04T00:00:00.000Z"}]}')}}]);
