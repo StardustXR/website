@@ -1,5 +1,6 @@
-const lightCodeTheme = require("prism-react-renderer/themes/vsLight");
-const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
+const { themes } = require("prism-react-renderer");
+const lightTheme = themes.vsLight;
+const darkTheme = themes.vsDark;
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
@@ -9,13 +10,21 @@ module.exports = {
 	baseUrl: "/",
 	trailingSlash: false,
 	onBrokenLinks: "throw",
-	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
 	organizationName: "StardustXR", // Usually your GitHub org/user name.
 	projectName: "website", // Usually your repo name.
-	scripts: [{src: 'https://plausible.fyralabs.com/js/script.hash.outbound-links.js', defer: true, 'data-domain': 'stardustxr.org'}],
+	scripts: [
+		{
+			src: "https://plausible.fyralabs.com/js/script.hash.outbound-links.js",
+			defer: true,
+			"data-domain": "stardustxr.org",
+		},
+	],
 	markdown: {
 		mermaid: true,
+		hooks: {
+			onBrokenMarkdownLinks: "warn",
+		},
 	},
 	themes: ["@docusaurus/theme-mermaid"],
 	themeConfig: {
@@ -116,8 +125,8 @@ module.exports = {
 			copyright: `Copyright © ${new Date().getFullYear()} Nova King`,
 		},
 		prism: {
-			theme: lightCodeTheme,
-			darkTheme: darkCodeTheme,
+			theme: lightTheme,
+			darkTheme: darkTheme,
 		},
 	},
 	presets: [

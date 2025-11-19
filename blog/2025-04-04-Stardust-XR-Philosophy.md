@@ -8,6 +8,7 @@ author: Cyberneticmelon
 In most modern user interaction there is a massive disconnect between the interface and the underlying system that is running.
 Although some user interfaces may look well designed, often times they have papered over how things work instead of unfolding the complexity
 in a way that is more understandable.
+<!-- truncate -->
 The average person may not easily understand why their computer is doing what it is doing, and delegate this knowledge to the realm of programmers
 or more technically inclined people.
 
