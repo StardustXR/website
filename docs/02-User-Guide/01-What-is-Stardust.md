@@ -23,4 +23,3 @@ To look around, hold down `Shift + Right` Click while moving the mouse.
 
 To drag applications out of the app launcher, hold down `Shift + ~`
 ![updated_drag](/img/updated_flat_drag.GIF)
-
