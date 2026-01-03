@@ -19,13 +19,13 @@ We highly recommend using [Monado](https://monado.dev/) or [WiVRn](https://githu
 
 ### Wired Headsets
 
-When using a wired PCVR headset you want to use [Monado](https://monado.dev/), if you are using NixOS take a look at this guide on the LVRA Wiki [https://lvra.gitlab.io/docs/distros/nixos/#monado](https://lvra.gitlab.io/docs/distros/nixos/#monado).
+When using a wired PCVR headset you want to use [Monado](https://monado.dev/), if you are using NixOS take a look at this guide on the [LVRA wiki page for NixOS](https://lvra.gitlab.io/docs/distros/nixos/#monado).
 
-For other Distros using Envision to build Monado is recommended, you can find more information here [https://lvra.gitlab.io/docs/fossvr/envision](https://lvra.gitlab.io/docs/fossvr/envision/)
+For other Distros using Envision to build Monado is recommended, if you want to set it up, head over to the [LVRA wiki page for Envision](https://lvra.gitlab.io/docs/fossvr/envision/)
 
 ### Standalone Headsets
 
-When using a standalone headset, you need to stream Stardust XR to your headset. For that you want to use [WiVRn](https://github.com/WiVRn/WiVRn), information on how to install it can be found here [https://lvra.gitlab.io/docs/fossvr/wivrn](https://lvra.gitlab.io/docs/fossvr/wivrn/)
+When using a standalone headset, you need to stream Stardust XR to it. For that you want to use [WiVRn](https://github.com/WiVRn/WiVRn), for more information on how to install it, head over to the [LVRA wiki page for WiVRn](https://lvra.gitlab.io/docs/fossvr/wivrn/)
 
 For more information on how to setup VR on linux in general, check out the [LVRA Wiki](https://lvra.gitlab.io/)!
 
