@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 # Full Installation 
 
@@ -19,7 +19,7 @@ This guide covers installing Stardust XR packages on various distributions, and 
   Fedora and Derivatives
 </h3>
 
-If you already added Terra when setting up the Open XR runtime, you can skip to the install commands below.
+If you already added Terra when setting up the OpenXR runtime, you can skip to the install commands below.
 
 :::info
 Stardust XR is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this repository comes pre-installed, otherwise you will need to add the repository:
@@ -64,6 +64,11 @@ sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr
 ```
 paru -s stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-magnetar stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server stardust-xr-telescope
 ```
+
+<h3>
+  <img src="/img/docs/nixos.svg" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
+  NixOS and Nix
+</h3>
 
 On NixOS, use the [Nix package manager](https://nixos.org/download/#nix-install-linux). Make sure [flakes are enabled](https://nixos.wiki/wiki/flakes).
 ```

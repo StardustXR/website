@@ -108,12 +108,12 @@ module.exports = {
 					title: "Code",
 					items: [
 						{
-							label: "Stardust XR (Server)",
-							href: "https://github.com/StardustXR/stardust-xr-server",
+							label: "Stardust XR Reference Server",
+							href: "https://github.com/StardustXR/server",
 						},
 						{
-							label: "stardust-xr (includes Fusion)",
-							href: "https://github.com/StardustXR/stardust-xr",
+							label: "Core (includes Fusion)",
+							href: "https://github.com/StardustXR/core",
 						},
 						{
 							label: "Flatland",
