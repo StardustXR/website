@@ -1,0 +1,38 @@
+.space-viewport * {
+	cursor: auto !important;
+	pointer-events: auto;
+}
+
+.grid-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-image:
+		repeating-linear-gradient(
+			to bottom,
+			rgba(94, 92, 100, 0.8) 0,
+			rgba(94, 92, 100, 0.8) 1px,
+			transparent 1px,
+			transparent 20px
+		),
+		repeating-linear-gradient(
+			to right,
+			rgba(94, 92, 100, 0.8) 0,
+			rgba(94, 92, 100, 0.8) 1px,
+			transparent 1px,
+			transparent 20px
+		);
+	background-size: 20px 20px;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.space-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}

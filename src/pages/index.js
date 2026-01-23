@@ -7,6 +7,7 @@ import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
 import Carousel from "../components/Carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import SpaceViewport from "../components/SpaceViewport";
 
 function HomepageHeader() {
 	const { siteConfig } = useDocusaurusContext();
@@ -37,6 +38,11 @@ export default function Home() {
 			<main>
 				<HomepageFeatures />
 				<Carousel />
+				<SpaceViewport>
+					<div className="island">
+						<p>test uwu</p>
+					</div>
+				</SpaceViewport>
 			</main>
 		</Layout>
 	);
