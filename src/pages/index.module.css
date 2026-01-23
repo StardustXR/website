@@ -23,3 +23,27 @@
 	align-items: center;
 	justify-content: center;
 }
+
+.island img {
+	max-width: min(75vw, 75vh);
+	border-radius: 4px;
+}
+
+.island h1 {
+	margin: 0 0 8px 0;
+	font-size: 1.5em;
+}
+
+.island p {
+	margin: 4px 0;
+	line-height: 1.4;
+}
+
+.island a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+.island a:hover {
+	text-decoration: underline;
+}
