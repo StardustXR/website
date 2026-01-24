@@ -1,3 +1,7 @@
+.space-viewport {
+	overflow: auto;
+}
+
 .space-viewport * {
 	cursor: auto !important;
 	pointer-events: auto;
@@ -35,4 +39,36 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	z-index: 1;
+	display: grid;
+	place-items: center;
+	pointer-events: none;
+}
+
+.space-center > * {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: auto;
+}
+
+.island {
+	position: absolute;
+	background: #111111;
+	transform: translate(-50%, -50%);
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.island img {
+	max-width: min(75vw, 75vh);
+	border-radius: 4px;
+}
+
+.island a {
+	color: #0066cc;
+	text-decoration: none;
+}
+
+.island a:hover {
+	text-decoration: underline;
 }
