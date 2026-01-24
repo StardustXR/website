@@ -62,7 +62,12 @@ export default function Home() {
 
 				<Carousel />
 				<SpaceViewport>
-					<div className="island">
+					<div className="island" style={{ top: "100px", left: "0px" }}>
+						<img src="img/icon.gif" alt="Stardust Logo" />
+						<p>test uwu</p>
+					</div>
+					<div className="island" style={{ top: "5000px", left: "0px" }}>
+						<img src="img/icon.gif" alt="Stardust Logo" />
 						<p>test uwu</p>
 					</div>
 				</SpaceViewport>

@@ -5,59 +5,84 @@ const SpaceViewport = ({
 	children,
 	className = "",
 	style = {},
-	grid = true, // Show grid background
-	grabCursor = true, // Enable grab cursor
+	grid = true,
+	grabCursor = true,
 }) => {
 	const viewportRef = useRef(null);
+	const containerRef = useRef(null);
 	const [isDragging, setIsDragging] = useState(false);
-	const lastPosRef = useRef({ x: 0, y: 0 });
+	const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
+	const dragStartRef = useRef({ x: 0, y: 0, scrollLeft: 0, scrollTop: 0 });
+	const resizeRef = useRef({
+		observing: false,
+		observer: null,
+		isResizing: false,
+		centerScrollPos: { left: 0, top: 0 },
+	});
 
-	// Auto-center viewport to content
-	const centerViewport = useCallback(() => {
+	const calculateBounds = useCallback(() => {
 		const viewport = viewportRef.current;
-		if (!viewport) return;
+		const container = containerRef.current;
+		if (!viewport || !container) return;
 
-		const { scrollWidth, scrollHeight, clientWidth, clientHeight } = viewport;
-		viewport.scrollTo({
-			left: Math.max(0, scrollWidth / 2 - clientWidth / 2),
-			top: Math.max(0, scrollHeight / 2 - clientHeight / 2),
-			behavior: "instant",
+		const children = container.querySelectorAll(":scope > *");
+		if (children.length === 0) {
+			setContainerSize({ width: 0, height: 0 });
+			return;
+		}
+
+		let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+
+		children.forEach((child) => {
+			const rect = child.getBoundingClientRect();
+			const containerRect = container.getBoundingClientRect();
+			const x = rect.left - containerRect.left;
+			const y = rect.top - containerRect.top;
+			minX = Math.min(minX, x);
+			minY = Math.min(minY, y);
+			maxX = Math.max(maxX, x + rect.width);
+			maxY = Math.max(maxY, y + rect.height);
 		});
+
+		const width = maxX - minX;
+		const height = maxY - minY;
+		const offsetX = minX;
+		const offsetY = minY;
+
+		setContainerSize({ width, height, offsetX, offsetY });
 	}, []);
 
-	// Drag handlers
 	const handleMouseDown = useCallback((e) => {
 		if (e.target !== viewportRef.current) return;
 
 		setIsDragging(true);
-		lastPosRef.current = { x: e.clientX, y: e.clientY };
-		e.preventDefault();
+		dragStartRef.current = {
+			x: e.clientX,
+			y: e.clientY,
+			scrollLeft: viewportRef.current.scrollLeft,
+			scrollTop: viewportRef.current.scrollTop,
+		};
 	}, []);
 
-	const handleMouseMove = useCallback(
-		(e) => {
-			if (!isDragging || !viewportRef.current) return;
+	const handleMouseMove = useCallback((e) => {
+		if (!isDragging || !viewportRef.current) return;
 
-			const viewport = viewportRef.current;
-			const deltaX = lastPosRef.current.x - e.clientX;
-			const deltaY = lastPosRef.current.y - e.clientY;
+		const dx = e.clientX - dragStartRef.current.x;
+		const dy = e.clientY - dragStartRef.current.y;
 
-			viewport.scrollBy({ left: deltaX, top: deltaY, behavior: "instant" });
-			lastPosRef.current = { x: e.clientX, y: e.clientY };
-		},
-		[isDragging],
-	);
+		viewportRef.current.scrollLeft = dragStartRef.current.scrollLeft + dx;
+		viewportRef.current.scrollTop = dragStartRef.current.scrollTop + dy;
+	}, [isDragging]);
 
 	const handleMouseUp = useCallback(() => {
 		setIsDragging(false);
 	}, []);
 
-	// Setup event listeners
 	useEffect(() => {
 		const viewport = viewportRef.current;
 		if (!viewport) return;
 
-		centerViewport();
+		calculateBounds();
 
 		document.addEventListener("mousemove", handleMouseMove);
 		document.addEventListener("mouseup", handleMouseUp);
@@ -66,18 +91,47 @@ const SpaceViewport = ({
 			document.removeEventListener("mousemove", handleMouseMove);
 			document.removeEventListener("mouseup", handleMouseUp);
 		};
-	}, [centerViewport, handleMouseMove, handleMouseUp]);
+	}, [calculateBounds, handleMouseMove, handleMouseUp]);
 
-	// Resize handler
 	useEffect(() => {
-		const handleResize = () => {
-			// Debounce with requestAnimationFrame
-			requestAnimationFrame(centerViewport);
-		};
+		const viewport = viewportRef.current;
+		if (!viewport) return;
 
-		window.addEventListener("resize", handleResize);
-		return () => window.removeEventListener("resize", handleResize);
-	}, [centerViewport]);
+		let resizeTimeout;
+
+		const resizeObserver = new ResizeObserver((entries) => {
+			for (const entry of entries) {
+				if (entry.target === viewport) {
+					if (!resizeRef.current.isResizing) {
+						const { clientWidth, clientHeight, scrollWidth, scrollHeight } = viewport;
+						resizeRef.current.centerScrollPos = {
+							left: scrollWidth / 2 - clientWidth / 2,
+							top: scrollHeight / 2 - clientHeight / 2,
+						};
+						resizeRef.current.isResizing = true;
+					}
+
+					clearTimeout(resizeTimeout);
+					resizeTimeout = setTimeout(() => {
+						resizeRef.current.isResizing = false;
+						calculateBounds();
+						viewport.scrollTo({
+							left: resizeRef.current.centerScrollPos.left,
+							top: resizeRef.current.centerScrollPos.top,
+							behavior: "instant",
+						});
+					}, 100);
+					break;
+				}
+			}
+		});
+
+		resizeObserver.observe(viewport);
+		return () => {
+			resizeObserver.disconnect();
+			clearTimeout(resizeTimeout);
+		};
+	}, [calculateBounds]);
 
 	return (
 		<main
@@ -102,7 +156,16 @@ const SpaceViewport = ({
 			}}
 		>
 			{grid && <div className="grid-overlay" />}
-			<div className="space-center">{children}</div>
+			<div
+				ref={containerRef}
+				className="space-center"
+				style={{
+					width: containerSize.width || "max-content",
+					height: containerSize.height || "max-content",
+				}}
+			>
+				{children}
+			</div>
 		</main>
 	);
 };
