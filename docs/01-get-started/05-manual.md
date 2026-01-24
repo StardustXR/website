@@ -16,35 +16,11 @@ This guide covers installing Stardust XR packages on various distributions, and 
     alt="Ultramarine Logo" 
     style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} 
   />
-  Fedora and Derivatives
 </h3>
-
-If you already added Terra when setting up the OpenXR runtime, you can skip to the install commands below.
+### Fedora and Derivatives
 
 :::info
-Stardust XR is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this repository comes pre-installed, otherwise you will need to add the repository:
-
-Standard Fedora Editions and derivatives can directly install terra-release:
-```
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
-```
-
-If you are using [RHEL10](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux-10) or derrivative you will need to first the EPEL repos, which may be installed with:
-```
-sudo dnf install 'https://dl.fedoraproject.org/pub/epel/epel-release-latest-$releasever.noarch.rpm'
-```
-
-Then install terra-release:
-
-```
-sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terrael$releasever' terra-release
-```
-
-If you are using a [Fedora Atomic Edition](https://fedoraproject.org/atomic-desktops/) or derrivative you will need to run the following command:
-```
-curl -fsSL https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo | pkexec tee /etc/yum.repos.d/terra.repo
-sudo rpm-ostree install terra-release
-```
+Stardust XR is packaged in the [Terra repository](https://terra.fyralabs.com/). If you are using [Ultramarine Linux](https://ultramarine-linux.org), [Bazzite](https://bazzite.gg), or [Aurora](https://getaurora.dev), this repository comes pre-installed, otherwise you will need to add the repository if you haven't already. You can find a guide to do so [here](https://developer.fyralabs.com/terra/installing)
 :::  
 Then, run this command to install all Stardust XR packages:
 ```

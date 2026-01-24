@@ -25,25 +25,25 @@ Unlike traditional display servers that focus on 2D screens, Stardust XR introdu
 ## Architecture
 
 ```mermaid
-graph LR
+graph TD
     OpenXR
 
-    OpenXR -->|Frame Data| StereoKit
-    OpenXR -->|Input Data| StereoKit
+    OpenXR -->|Frame Data| Bevy
+    OpenXR -->|Input Data| Bevy
 
     subgraph Server[Stardust Server]
-    		StereoKit[StereoKit]
-        InternalSceneGraph[Internal Scenegraph]
-        WC1[Wayland Client 1]
+    		Bevy[Bevy]
+        InternalSceneGraph[Internal Client Scenegraph]
+        WC1[Wayland Compositor]
         DBusConnection[D-Bus Connection]
 
-        ClientSceneGraph -->|Drawable Objects| StereoKit
-        StereoKit -->|Controller, Hand & HMD Data| InternalSceneGraph
+        ClientSceneGraph -->|Drawable Objects| Bevy
+        OpenXR -->|Controller, Hand & HMD Data| InternalSceneGraph
         InternalSceneGraph -->|Panel Items| ClientSceneGraph
         InternalSceneGraph -->|Controller, Hand & HMD Export| DBusConnection
         WC1 -->|Panel Item| InternalSceneGraph
-        WC1 -->|Textures| StereoKit
-        StereoKit -->|EGL Context| WC1
+        WC1 -->|Textures| Bevy
+        Bevy -->|Rendered Images| OpenXR
         ClientSceneGraph --> C1
 
         subgraph C1[Stardust Client 1]
@@ -85,16 +85,30 @@ graph LR
 
 ## Projects & Components
 
+### Clients
+
 - [**armillary**](https://github.com/StardustXR/Armillary): A 3D model viewer for Stardust XR; rotate, move, and display models in your XR space 
-- [**atmosphere**](https://github.com/StardustXR/atmosphere): 3D environment with natural momentum-based movement
-- [**black hole**](https://github.com/StardustXR/black-hole): Universal minimization of Stardust objects
+- [**atmosphere**](https://github.com/StardustXR/atmosphere): A 3D environment viewer
+- [**black hole**](https://github.com/StardustXR/black-hole): Universal minimization of objects
 - [**comet**](https://github.com/StardustXR/comet): Annotate in 3D wherever you want amongst your other apps!
-- [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
-- [**flatland**](https://github.com/StardustXR/flatland): Allows Starust XR to run 2D linux applications 
+- [**flatland**](https://github.com/StardustXR/flatland): Lets your 2D apps take from as a Panel in 3D space
 - [**gravity**](https://github.com/StardustXR/gravity): Launch programs with a certain offset in 3D space
-- [**magnetar**](https://github.com/StardustXR/magnetar): Example workspaces client
 - [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): Provides utilities to port keyboard, mouse, and other input methods like libinput into Stardust XR
 - [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
-- [**server**](https://github.com/StardustXR/server): Reference implementation of the StardustXR server (similar to Xorg)
-- [**telescope**](https://github.com/StardustXR/telescope): Stable stardust setup for quick and easy usage
+
+### Rust crates
+
+- [**core lib**](https://github.com/StardustXR/core): Rust crates and schemas for connecting stardust server and client
+- [**molecules**](https://github.com/StardustXR/molecules): Higher level interaction toolkit crate for Stardust
+- [**asteroids**](https://github.com/StardustXR/asteroids): Declaritive framework in Rust
+- [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
+
+### Other
+
+- [**server**](https://github.com/StardustXR/server): Reference implementation of the Stardust XR server (similar to Xorg)
+- [**telescope**](https://github.com/StardustXR/telescope): Prepackaged Stardust setup built primarily as an overlay
 - [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
+
+### Currently unmaintined
+
+- [**magnetar**](https://github.com/StardustXR/magnetar): Example workspaces client
