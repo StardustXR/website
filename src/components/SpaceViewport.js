@@ -31,7 +31,7 @@ const SpaceViewport = ({
 			return;
 		}
 
-		let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+		let minX = -Infinity, minY = -Infinity, maxX = Infinity, maxY = Infinity;
 
 		children.forEach((child) => {
 			const rect = child.getBoundingClientRect();
@@ -139,8 +139,8 @@ const SpaceViewport = ({
 			className={`space-viewport ${className}`}
 			onMouseDown={handleMouseDown}
 			style={{
-				height: "100svh",
-				width: "100svw",
+				height: "100svh", // full window height
+				width: "100svw", // full window width
 				overflow: "scroll",
 				position: "relative",
 				backgroundColor: grid ? "#241f31" : "transparent",
