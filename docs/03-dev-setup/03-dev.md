@@ -29,16 +29,10 @@ Write in 3D wherever you want amongst your other apps!
 3D panel UI (like window manager) for interacting with all your 2D apps
 - [**gravity**](https://github.com/StardustXR/gravity): `https://github.com/StardustXR/gravity`  
 Launch programs with a certain offset in 3D space
-- [**magnetar**](https://github.com/StardustXR/magnetar): `https://github.com/StardustXR/magnetar`  
-Example workspaces client
 - [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): `https://github.com/StardustXR/non-spatial-input`  
 Provides utilities to port keyboard, mouse, and other input methods like libinput into Stardust XR
 - [**protostar**](https://github.com/StardustXR/protostar): `https://github.com/StardustXR/protostar`  
 App launcher library and examples including futuristic Hexagon Launcher
-
-### Installation Script
-
-If you have all the correct dependencies, we've created a [script](https://github.com/cyberneticmelon/usefulscripts/blob/main/stardustxr_setup.sh) that will automatically `git clone` all of the necessary repositories, `cargo build` all of them, and give them a symlinks for running the server and clients from the command line. It also creates a [config](https://github.com/cyberneticmelon/usefulscripts/blob/main/startup) file that will by default install the default `atmosphere` background. Run the script with flag `-nobg` if you don't want that.
 
 # After Installation
 

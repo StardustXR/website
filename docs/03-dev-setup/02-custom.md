@@ -31,7 +31,7 @@ sudo dnf group install stardust-xr
 If using a Fedora Atomic/Universal Blue based image, run the following command to install all Stardust XR packages:
 
 ```
-sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-magnetar stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
+sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
 ```
 <h3>
   <img src="/img/docs/arch.png" alt="Logo" style={{ verticalAlign: 'middle', height: '1em', marginRight: '0.5em' }} />
@@ -39,5 +39,5 @@ sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr
 </h3>
 
 ```
-paru -s stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-magnetar stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
+paru -s stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
 ```

@@ -31,7 +31,7 @@ The default setup script is at path `~/.config/stardust/startup` and is an execu
 #   export PATH=/run/media/nova/MEDIA/xr/stardust/$lib/target/debug/examples:$PATH
 # done
 # 
-# for lib in atmosphere black-hole comet flatland gravity magnetar manifold protostar orbit poltergeist non-spatial-input solar-sailer state-space-adventure
+# for lib in atmosphere black-hole comet flatland gravity manifold protostar orbit poltergeist non-spatial-input solar-sailer state-space-adventure
 # do
 #   export PATH=/run/media/nova/MEDIA/xr/stardust/clients/$lib/target/debug:$PATH
 #   export PATH=/run/media/nova/MEDIA/xr/stardust/clients/$lib/target/debug/examples:$PATH
