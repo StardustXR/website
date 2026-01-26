@@ -51,11 +51,6 @@ module.exports = {
 					position: "right",
 				},
 				{
-					href: "https://matrix.to/#/#stardustxr:matrix.org",
-					label: "Matrix",
-					position: "right",
-				},
-				{
 					href: "https://github.com/StardustXR",
 					label: "GitHub",
 					position: "right",
