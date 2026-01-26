@@ -69,8 +69,8 @@ module.exports = {
 					title: "Docs",
 					items: [
 						{
-							label: "Getting Started",
-							to: "/docs/get-started/setup-openxr",
+							label: "Try Telescope",
+							to: "/docs/telescope/install",
 						},
 					],
 				},
@@ -80,10 +80,6 @@ module.exports = {
 						{
 							label: "Discord",
 							href: "https://discord.gg/A9w7fKE",
-						},
-						{
-							label: "Matrix",
-							href: "https://matrix.to/#/#stardustxr:matrix.org",
 						},
 						{
 							label: "Twitter",

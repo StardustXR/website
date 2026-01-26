@@ -17,8 +17,6 @@ sidebar_position: 1
 
 Stardust XR is a [display server](https://itsfoss.com/display-server/) for VR and AR headsets on Linux-based systems. Stardust provides a 3D environment, where anything from 2D windows (including your existing apps!), to 3D apps built from objects, can exist together in physical space.
 
-If you'd like to try Stardust XR on your existing device (including without a headset!) head to the [Telescope Installation](telescope) guide. If you'd like to use a VR headset, check out [Set up OpenXR Runtime](setup-openxr). If you already have your headset set up, head to the [Telescope Installation](telescope) page.
-
 Stardust XR is actively looking for help with development to expand the project. You can also [become a sponsor](https://github.com/sponsors/technobaboo).
 
 ## Priorities
