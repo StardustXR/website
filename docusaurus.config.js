@@ -5,7 +5,7 @@ const darkTheme = themes.vsDark;
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
 	title: "Stardust XR",
-	tagline: "Stardust... We Fight For the Users!",
+	tagline: "We Fight For the Users!",
 	url: "https://stardustxr.org",
 	baseUrl: "/",
 	trailingSlash: false,

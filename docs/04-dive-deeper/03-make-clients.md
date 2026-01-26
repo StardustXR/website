@@ -27,3 +27,9 @@ and include the `stardust-xr-fusion` dependency in your `cargo.toml`. Documentat
 ## Molecules
 
 `stardust-xr-molecules` is an even higher level widget library built on Fusion similar to [MRTK](https://github.com/microsoft/MixedRealityToolkit-Unity) to get your clients up and running faster. Documentation will be available at https://docs.rs/crate/stardust-xr-molecules/latest.
+
+## Asteroids
+
+`stardust-xr-asteroids` is a declarative UI library kinda similar to [Iced](https://iced.rs/) (efficient functional design) and [SwiftUI](https://developer.apple.com/swiftui/) (direct state manipulation/saving/restoring).
+
+This is probably what you should use to make most normal "app-like" clients because complexity is easy to manage in your state struct.
