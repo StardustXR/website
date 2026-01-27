@@ -5,7 +5,7 @@ sidebar_position: 1
 
 :::warning
 
-Make sure to have installed [WiVRn](https://lvra.gitlab.io/docs/fossvr/wivrn/), [Monado](https://lvra.gitlab.io/docs/fossvr/monado/)/[Envision](https://lvra.gitlab.io/docs/fossvr/envision/), or (if necessary) [SteamVR](https://lvra.gitlab.io/docs/steamvr/)!
+Make sure to have [WiVRn](https://lvra.gitlab.io/docs/fossvr/wivrn/), [Monado](https://lvra.gitlab.io/docs/fossvr/monado/)/[Envision](https://lvra.gitlab.io/docs/fossvr/envision/), or (if necessary) [SteamVR](https://lvra.gitlab.io/docs/steamvr/) installed!
 
 :::
 
