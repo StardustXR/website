@@ -31,7 +31,6 @@ The [Stardust XR reference server](https://github.com/StardustXR/server) is the 
 
 ### Other
 
-- [**server**](https://github.com/StardustXR/server): Reference implementation of the Stardust XR server (similar to Xorg)
 - [**telescope**](https://github.com/StardustXR/telescope): Prepackaged Stardust setup built primarily as an overlay
 - [**website**](https://github.com/StardustXR/website): The location where documentation is done and the website is generated from
 
