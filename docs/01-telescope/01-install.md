@@ -51,6 +51,6 @@ sudo rpm-ostree install stardust-xr-telescope
 
 ### Other Distributions
 
-Download the AppImage from https://github.com/StardustXR/telescope/releases/latest. Since some Distribution Packages might be Outdated, the AppImage will always be up to date.
+Download the AppImage from https://github.com/StardustXR/telescope/releases/latest.
 
 We know AppImages aren't ideal (for social and technical reasons), but bundling what is essentially a DE is hard work! [Let us know](https://discord.gg/A9w7fKE) if you can do better.
