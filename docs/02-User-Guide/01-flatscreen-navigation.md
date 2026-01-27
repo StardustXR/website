@@ -21,5 +21,5 @@ To move around, hold down `Shift + W A S D`, with `Q` for moving down and `E` fo
 To look around, hold down `Shift + Right` Click while moving the mouse. 
 ![updated_look](/img/updated_flat_look.GIF)
 
-To drag applications out of the app launcher, hold down `Shift + ~`
+To drag applications out of the app launcher, hold down `Right` Click (GIF outdated)
 ![updated_drag](/img/updated_flat_drag.GIF)

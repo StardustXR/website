@@ -11,6 +11,7 @@ Run WiVRn, Monado, or SteamVR.
 ## Distro package
 
 Run `telescope` in the commandline or launch Telescope from the regular app launcher.
+If you're using WiVRn you can also launch Telescope from the builtin app launcher.
 
 ## AppImage
 
