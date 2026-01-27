@@ -19,7 +19,7 @@ The [Stardust XR reference server](https://github.com/StardustXR/server) is the 
 - [**comet**](https://github.com/StardustXR/comet): Annotate in 3D wherever you want amongst your other apps!
 - [**flatland**](https://github.com/StardustXR/flatland): Lets your 2D apps take form as a Panel in 3D space
 - [**gravity**](https://github.com/StardustXR/gravity): Launch programs with a certain offset in 3D space
-- [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): Provides utilities to port keyboard, mouse, and other input methods like libinput into Stardust XR
+- [**non-spatial-input**](https://github.com/StardustXR/non-spatial-input): Provides utilities to plug raw keyboard and mouse input from various sources into Stardust XR
 - [**protostar**](https://github.com/StardustXR/protostar): App launcher library and examples including futuristic hexagon launcher
 
 ### Rust crates
