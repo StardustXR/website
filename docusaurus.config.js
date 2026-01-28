@@ -41,8 +41,13 @@ module.exports = {
 			},
 			items: [
 				{
-					href: "https://twitter.com/stardustxr",
-					label: "Twitter",
+					href: "https://bsky.app/profile/stardustxr.org",
+					label: "Bluesky",
+					position: "right",
+				},
+				{
+					href: "https://fosstodon.org/@stardustxr",
+					label: "Mastodon",
 					position: "right",
 				},
 				{
