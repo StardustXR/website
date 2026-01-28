@@ -39,5 +39,5 @@ sudo rpm-ostree install stardust-xr-armillary stardust-xr-atmosphere stardust-xr
 </h3>
 
 ```
-paru -s stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
+paru -S stardust-xr-armillary stardust-xr-atmosphere stardust-xr-black-hole stardust-xr-comet stardust-xr-flatland stardust-xr-gravity stardust-xr-non-spatial-input stardust-xr-protostar stardust-xr-server
 ```
