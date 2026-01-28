@@ -5,7 +5,7 @@ const darkTheme = themes.vsDark;
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
 	title: "Stardust XR",
-	tagline: "Stardust... We Fight For the Users!",
+	tagline: "We Fight For the Users!",
 	url: "https://stardustxr.org",
 	baseUrl: "/",
 	trailingSlash: false,
@@ -41,18 +41,18 @@ module.exports = {
 			},
 			items: [
 				{
-					href: "https://twitter.com/stardustxr",
-					label: "Twitter",
+					href: "https://bsky.app/profile/stardustxr.org",
+					label: "Bluesky",
+					position: "right",
+				},
+				{
+					href: "https://fosstodon.org/@stardustxr",
+					label: "Mastodon",
 					position: "right",
 				},
 				{
 					href: "https://discord.gg/A9w7fKE",
 					label: "Discord",
-					position: "right",
-				},
-				{
-					href: "https://matrix.to/#/#stardustxr:matrix.org",
-					label: "Matrix",
 					position: "right",
 				},
 				{
@@ -74,8 +74,8 @@ module.exports = {
 					title: "Docs",
 					items: [
 						{
-							label: "Getting Started",
-							to: "/docs/get-started/setup-openxr",
+							label: "Try Telescope",
+							to: "/docs/telescope/install",
 						},
 					],
 				},
@@ -85,10 +85,6 @@ module.exports = {
 						{
 							label: "Discord",
 							href: "https://discord.gg/A9w7fKE",
-						},
-						{
-							label: "Matrix",
-							href: "https://matrix.to/#/#stardustxr:matrix.org",
 						},
 						{
 							label: "Twitter",
@@ -108,12 +104,12 @@ module.exports = {
 					title: "Code",
 					items: [
 						{
-							label: "Stardust XR (Server)",
-							href: "https://github.com/StardustXR/stardust-xr-server",
+							label: "Stardust XR Reference Server",
+							href: "https://github.com/StardustXR/server",
 						},
 						{
-							label: "stardust-xr (includes Fusion)",
-							href: "https://github.com/StardustXR/stardust-xr",
+							label: "Core (includes Fusion)",
+							href: "https://github.com/StardustXR/core",
 						},
 						{
 							label: "Flatland",
