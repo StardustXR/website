@@ -23,12 +23,11 @@ Stardust XR is actively looking for help with development to expand the project.
 
 - **3D Environment Focus**: While supporting 2D clients through the Wayland protocol, Stardust XR primarily aims to create and manage 3D environments.
 
-- **Standard Interfaces**: Utilizes Wayland and OpenXR for 2D and XR app integration.
+- **Standard Interfaces**: Utilizes Wayland for 2D app integration.
 
 - **Stardust Protocol**: Implements a special protocol for:
   - Creating virtual objects
   - Developing 3D UIs around 2D apps (Panel Shells)
-  - Handling data as Items that can represent files, Wayland surfaces, etc.
 
 - **Personal Device Interaction**: Focuses on individual user interactions rather than collaborative 3D spaces.
 
