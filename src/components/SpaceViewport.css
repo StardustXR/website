@@ -1,18 +1,25 @@
 .space-viewport {
-	overflow: auto;
+	/* Target canvas size - overridden by JS via inline style when available */
+	--canvas-width: 4000px;
+	--canvas-height: 4000px;
+
+	/* Size is set by consumer via style prop or wrapper */
+	overflow: scroll;
+	position: relative;
+	background-color: #241f31;
 }
 
 .space-viewport * {
 	cursor: auto !important;
-	pointer-events: auto;
 }
 
 .grid-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
+	/* At least as big as viewport, or canvas size if larger */
+	width: max(var(--canvas-width), 100%);
+	height: max(var(--canvas-height), 100%);
 	background-image:
 		repeating-linear-gradient(
 			to bottom,
@@ -35,28 +42,24 @@
 
 .space-center {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	/* Center point of the canvas */
+	top: calc(max(var(--canvas-height), 100%) / 2);
+	left: calc(max(var(--canvas-width), 100%) / 2);
+	width: 0;
+	height: 0;
 	z-index: 1;
-	display: grid;
-	place-items: center;
 	pointer-events: none;
-}
-
-.space-center > * {
-	position: absolute;
-	transform: translate(-50%, -50%);
-	pointer-events: auto;
 }
 
 .island {
 	position: absolute;
 	background: #111111;
+	/* Center the island on its top/left coordinates */
 	transform: translate(-50%, -50%);
 	padding: 16px;
 	border-radius: 8px;
 	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+	pointer-events: auto;
 }
 
 .island img {

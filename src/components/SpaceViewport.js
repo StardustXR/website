@@ -7,53 +7,72 @@ const SpaceViewport = ({
 	style = {},
 	grid = true,
 	grabCursor = true,
+	manualCanvasWidth,  // Fallback for noscript
+	manualCanvasHeight, // Fallback for noscript
+	padding = 100,      // Padding around content for auto-sizing
 }) => {
 	const viewportRef = useRef(null);
 	const containerRef = useRef(null);
 	const [isDragging, setIsDragging] = useState(false);
-	const [containerSize, setContainerSize] = useState({ width: 0, height: 0 });
+	const [autoSize, setAutoSize] = useState({ width: null, height: null });
 	const dragStartRef = useRef({ x: 0, y: 0, scrollLeft: 0, scrollTop: 0 });
-	const resizeRef = useRef({
-		observing: false,
-		observer: null,
-		isResizing: false,
-		centerScrollPos: { left: 0, top: 0 },
-	});
+	const hasCenteredRef = useRef(false);
+
+	const centerViewport = useCallback(() => {
+		const viewport = viewportRef.current;
+		if (!viewport) return;
+
+		const { scrollWidth, scrollHeight, clientWidth, clientHeight } = viewport;
+		viewport.scrollTo({
+			left: (scrollWidth - clientWidth) / 2,
+			top: (scrollHeight - clientHeight) / 2,
+			behavior: "instant",
+		});
+	}, []);
 
 	const calculateBounds = useCallback(() => {
-		const viewport = viewportRef.current;
 		const container = containerRef.current;
-		if (!viewport || !container) return;
+		if (!container) return;
 
-		const children = container.querySelectorAll(":scope > *");
-		if (children.length === 0) {
-			setContainerSize({ width: 0, height: 0 });
+		const childElements = container.querySelectorAll(":scope > *");
+		if (childElements.length === 0) {
+			setAutoSize({ width: null, height: null });
 			return;
 		}
 
-		let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+		let maxExtentX = 0;
+		let maxExtentY = 0;
 
-		children.forEach((child) => {
-			const rect = child.getBoundingClientRect();
-			const containerRect = container.getBoundingClientRect();
-			const x = rect.left - containerRect.left;
-			const y = rect.top - containerRect.top;
-			minX = Math.min(minX, x);
-			minY = Math.min(minY, y);
-			maxX = Math.max(maxX, x + rect.width);
-			maxY = Math.max(maxY, y + rect.height);
+		childElements.forEach((child) => {
+			const style = window.getComputedStyle(child);
+			const left = parseFloat(style.left) || 0;
+			const top = parseFloat(style.top) || 0;
+			const width = child.offsetWidth;
+			const height = child.offsetHeight;
+
+			// Account for transform: translate(-50%, -50%) centering
+			// Find the furthest edge from center in any direction
+			const extentLeft = Math.abs(left - width / 2);
+			const extentRight = Math.abs(left + width / 2);
+			const extentTop = Math.abs(top - height / 2);
+			const extentBottom = Math.abs(top + height / 2);
+
+			maxExtentX = Math.max(maxExtentX, extentLeft, extentRight);
+			maxExtentY = Math.max(maxExtentY, extentTop, extentBottom);
 		});
 
-		const width = maxX - minX;
-		const height = maxY - minY;
-		const offsetX = minX;
-		const offsetY = minY;
+		// Canvas is symmetric around center, so double the max extent + padding
+		const width = maxExtentX * 2 + padding * 2;
+		const height = maxExtentY * 2 + padding * 2;
 
-		setContainerSize({ width, height, offsetX, offsetY });
-	}, []);
+		setAutoSize({ width, height });
+	}, [padding]);
 
 	const handleMouseDown = useCallback((e) => {
-		if (e.target !== viewportRef.current) return;
+		// Allow drag on viewport or grid overlay
+		const isViewport = e.target === viewportRef.current;
+		const isGridOverlay = e.target.classList.contains("grid-overlay");
+		if (!isViewport && !isGridOverlay) return;
 
 		setIsDragging(true);
 		dragStartRef.current = {
@@ -62,6 +81,7 @@ const SpaceViewport = ({
 			scrollLeft: viewportRef.current.scrollLeft,
 			scrollTop: viewportRef.current.scrollTop,
 		};
+		e.preventDefault();
 	}, []);
 
 	const handleMouseMove = useCallback((e) => {
@@ -70,19 +90,29 @@ const SpaceViewport = ({
 		const dx = e.clientX - dragStartRef.current.x;
 		const dy = e.clientY - dragStartRef.current.y;
 
-		viewportRef.current.scrollLeft = dragStartRef.current.scrollLeft + dx;
-		viewportRef.current.scrollTop = dragStartRef.current.scrollTop + dy;
+		// Subtract delta so content follows cursor direction
+		viewportRef.current.scrollLeft = dragStartRef.current.scrollLeft - dx;
+		viewportRef.current.scrollTop = dragStartRef.current.scrollTop - dy;
 	}, [isDragging]);
 
 	const handleMouseUp = useCallback(() => {
 		setIsDragging(false);
 	}, []);
 
+	// Calculate bounds and center on mount
 	useEffect(() => {
 		const viewport = viewportRef.current;
 		if (!viewport) return;
 
 		calculateBounds();
+
+		// Center viewport after a frame to ensure layout is complete
+		requestAnimationFrame(() => {
+			if (!hasCenteredRef.current) {
+				centerViewport();
+				hasCenteredRef.current = true;
+			}
+		});
 
 		document.addEventListener("mousemove", handleMouseMove);
 		document.addEventListener("mouseup", handleMouseUp);
@@ -91,39 +121,21 @@ const SpaceViewport = ({
 			document.removeEventListener("mousemove", handleMouseMove);
 			document.removeEventListener("mouseup", handleMouseUp);
 		};
-	}, [calculateBounds, handleMouseMove, handleMouseUp]);
+	}, [calculateBounds, centerViewport, handleMouseMove, handleMouseUp]);
 
+	// Handle resize - recalculate bounds and maintain center
 	useEffect(() => {
 		const viewport = viewportRef.current;
 		if (!viewport) return;
 
 		let resizeTimeout;
 
-		const resizeObserver = new ResizeObserver((entries) => {
-			for (const entry of entries) {
-				if (entry.target === viewport) {
-					if (!resizeRef.current.isResizing) {
-						const { clientWidth, clientHeight, scrollWidth, scrollHeight } = viewport;
-						resizeRef.current.centerScrollPos = {
-							left: scrollWidth / 2 - clientWidth / 2,
-							top: scrollHeight / 2 - clientHeight / 2,
-						};
-						resizeRef.current.isResizing = true;
-					}
-
-					clearTimeout(resizeTimeout);
-					resizeTimeout = setTimeout(() => {
-						resizeRef.current.isResizing = false;
-						calculateBounds();
-						viewport.scrollTo({
-							left: resizeRef.current.centerScrollPos.left,
-							top: resizeRef.current.centerScrollPos.top,
-							behavior: "instant",
-						});
-					}, 100);
-					break;
-				}
-			}
+		const resizeObserver = new ResizeObserver(() => {
+			clearTimeout(resizeTimeout);
+			resizeTimeout = setTimeout(() => {
+				calculateBounds();
+				centerViewport();
+			}, 100);
 		});
 
 		resizeObserver.observe(viewport);
@@ -131,19 +143,22 @@ const SpaceViewport = ({
 			resizeObserver.disconnect();
 			clearTimeout(resizeTimeout);
 		};
-	}, [calculateBounds]);
+	}, [calculateBounds, centerViewport]);
+
+	// Use auto-size if available, otherwise fall back to manual props
+	const finalWidth = autoSize.width || manualCanvasWidth;
+	const finalHeight = autoSize.height || manualCanvasHeight;
 
 	return (
-		<main
+		<div
 			ref={viewportRef}
 			className={`space-viewport ${className}`}
 			onMouseDown={handleMouseDown}
 			style={{
-				height: "100svh",
-				width: "100svw",
-				overflow: "scroll",
-				position: "relative",
-				backgroundColor: grid ? "#241f31" : "transparent",
+				// Pass calculated size as CSS variables for external styling
+				"--canvas-width": finalWidth ? `${finalWidth}px` : undefined,
+				"--canvas-height": finalHeight ? `${finalHeight}px` : undefined,
+				backgroundColor: grid ? undefined : "transparent",
 				cursor:
 					grabCursor && isDragging
 						? "grabbing"
@@ -159,14 +174,10 @@ const SpaceViewport = ({
 			<div
 				ref={containerRef}
 				className="space-center"
-				style={{
-					width: containerSize.width || "max-content",
-					height: containerSize.height || "max-content",
-				}}
 			>
 				{children}
 			</div>
-		</main>
+		</div>
 	);
 };
 
