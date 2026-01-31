@@ -7,9 +7,9 @@ const SpaceViewport = ({
 	style = {},
 	grid = true,
 	grabCursor = true,
-	manualCanvasWidth,  // Fallback for noscript
+	manualCanvasWidth, // Fallback for noscript
 	manualCanvasHeight, // Fallback for noscript
-	padding = 100,      // Padding around content for auto-sizing
+	padding = 100, // Padding around content for auto-sizing
 }) => {
 	const viewportRef = useRef(null);
 	const containerRef = useRef(null);
@@ -84,16 +84,19 @@ const SpaceViewport = ({
 		e.preventDefault();
 	}, []);
 
-	const handleMouseMove = useCallback((e) => {
-		if (!isDragging || !viewportRef.current) return;
+	const handleMouseMove = useCallback(
+		(e) => {
+			if (!isDragging || !viewportRef.current) return;
 
-		const dx = e.clientX - dragStartRef.current.x;
-		const dy = e.clientY - dragStartRef.current.y;
+			const dx = e.clientX - dragStartRef.current.x;
+			const dy = e.clientY - dragStartRef.current.y;
 
-		// Subtract delta so content follows cursor direction
-		viewportRef.current.scrollLeft = dragStartRef.current.scrollLeft - dx;
-		viewportRef.current.scrollTop = dragStartRef.current.scrollTop - dy;
-	}, [isDragging]);
+			// Subtract delta so content follows cursor direction
+			viewportRef.current.scrollLeft = dragStartRef.current.scrollLeft - dx;
+			viewportRef.current.scrollTop = dragStartRef.current.scrollTop - dy;
+		},
+		[isDragging],
+	);
 
 	const handleMouseUp = useCallback(() => {
 		setIsDragging(false);
@@ -167,14 +170,12 @@ const SpaceViewport = ({
 							: "default",
 				userSelect: isDragging ? "none" : "auto",
 				WebkitUserSelect: isDragging ? "none" : "auto",
+				scrollbarGutter: "stable" /* Track then thumb */,
 				...style,
 			}}
 		>
 			{grid && <div className="grid-overlay" />}
-			<div
-				ref={containerRef}
-				className="space-center"
-			>
+			<div ref={containerRef} className="space-center">
 				{children}
 			</div>
 		</div>
