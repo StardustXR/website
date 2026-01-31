@@ -5,7 +5,8 @@ const SpaceViewport = ({
 	children,
 	className = "",
 	style = {},
-	grid = true,
+	nebula = true,
+	backgroundImage = null, // Background image URL
 	grabCursor = true,
 	manualCanvasWidth, // Fallback for noscript
 	manualCanvasHeight, // Fallback for noscript
@@ -13,6 +14,7 @@ const SpaceViewport = ({
 }) => {
 	const viewportRef = useRef(null);
 	const containerRef = useRef(null);
+	const backgroundRef = useRef(null);
 	const [isDragging, setIsDragging] = useState(false);
 	const [autoSize, setAutoSize] = useState({ width: null, height: null });
 	const dragStartRef = useRef({ x: 0, y: 0, scrollLeft: 0, scrollTop: 0 });
@@ -69,10 +71,10 @@ const SpaceViewport = ({
 	}, [padding]);
 
 	const handleMouseDown = useCallback((e) => {
-		// Allow drag on viewport or grid overlay
+		// Allow drag on viewport or background
 		const isViewport = e.target === viewportRef.current;
-		const isGridOverlay = e.target.classList.contains("grid-overlay");
-		if (!isViewport && !isGridOverlay) return;
+		const isBackground = e.target.closest(".space-background");
+		if (!isViewport && !isBackground) return;
 
 		setIsDragging(true);
 		dragStartRef.current = {
@@ -148,6 +150,43 @@ const SpaceViewport = ({
 		};
 	}, [calculateBounds, centerViewport]);
 
+	// Parallax effect for background image and nebula
+	useEffect(() => {
+		const viewport = viewportRef.current;
+		const background = backgroundRef.current;
+		if (!viewport || !background) return;
+
+		const nebulaEl = background.querySelector(".nebula-layer");
+		const bgParallax = 0.15;
+		const nebulaParallax = 0.03;
+
+		const handleScroll = () => {
+			const scrollX = viewport.scrollLeft;
+			const scrollY = viewport.scrollTop;
+			const centerX = (viewport.scrollWidth - viewport.clientWidth) / 2;
+			const centerY = (viewport.scrollHeight - viewport.clientHeight) / 2;
+
+			// Background image parallax
+			if (backgroundImage) {
+				const offsetX = (scrollX - centerX) * bgParallax;
+				const offsetY = (scrollY - centerY) * bgParallax;
+				background.style.backgroundPosition = `calc(50% + ${offsetX}px) calc(50% + ${offsetY}px)`;
+			}
+
+			// Nebula parallax (slower/subtler)
+			if (nebulaEl) {
+				const nebulaX = (scrollX - centerX) * nebulaParallax;
+				const nebulaY = (scrollY - centerY) * nebulaParallax;
+				nebulaEl.style.transform = `translate(${-nebulaX}px, ${-nebulaY}px)`;
+			}
+		};
+
+		viewport.addEventListener("scroll", handleScroll, { passive: true });
+		handleScroll();
+
+		return () => viewport.removeEventListener("scroll", handleScroll);
+	}, [backgroundImage, nebula]);
+
 	// Use auto-size if available, otherwise fall back to manual props
 	const finalWidth = autoSize.width || manualCanvasWidth;
 	const finalHeight = autoSize.height || manualCanvasHeight;
@@ -161,7 +200,6 @@ const SpaceViewport = ({
 				// Pass calculated size as CSS variables for external styling
 				"--canvas-width": finalWidth ? `${finalWidth}px` : undefined,
 				"--canvas-height": finalHeight ? `${finalHeight}px` : undefined,
-				backgroundColor: grid ? undefined : "transparent",
 				cursor:
 					grabCursor && isDragging
 						? "grabbing"
@@ -170,11 +208,21 @@ const SpaceViewport = ({
 							: "default",
 				userSelect: isDragging ? "none" : "auto",
 				WebkitUserSelect: isDragging ? "none" : "auto",
-				scrollbarGutter: "stable" /* Track then thumb */,
+				scrollbarGutter: "stable",
 				...style,
 			}}
 		>
-			{grid && <div className="grid-overlay" />}
+			<div
+				ref={backgroundRef}
+				className="space-background"
+				style={{
+					backgroundImage: backgroundImage
+						? `url(${backgroundImage})`
+						: undefined,
+				}}
+			>
+				{nebula && <div className="nebula-layer" />}
+			</div>
 			<div ref={containerRef} className="space-center">
 				{children}
 			</div>

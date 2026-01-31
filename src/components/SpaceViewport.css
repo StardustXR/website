@@ -6,39 +6,51 @@
 	/* Size is set by consumer via style prop or wrapper */
 	overflow: scroll;
 	position: relative;
-	background-color: #241f31;
+	background-color: #05050a;
 }
 
 .space-viewport * {
 	cursor: auto !important;
 }
 
-.grid-overlay {
+.space-background {
 	position: absolute;
 	top: 0;
 	left: 0;
-	/* At least as big as viewport, or canvas size if larger */
 	width: max(var(--canvas-width), 100%);
 	height: max(var(--canvas-height), 100%);
-	background-image:
-		repeating-linear-gradient(
-			to bottom,
-			rgba(94, 92, 100, 0.8) 0,
-			rgba(94, 92, 100, 0.8) 1px,
-			transparent 1px,
-			transparent 20px
-		),
-		repeating-linear-gradient(
-			to right,
-			rgba(94, 92, 100, 0.8) 0,
-			rgba(94, 92, 100, 0.8) 1px,
-			transparent 1px,
-			transparent 20px
-		);
-	background-size: 20px 20px;
 	pointer-events: none;
 	z-index: 0;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
+
+/* Nebula dust clouds */
+.nebula-layer {
+	position: absolute;
+	top: -10%;
+	left: -10%;
+	width: 120%;
+	height: 120%;
+	z-index: 1;
+	background:
+		/* Large purple blobs */
+		radial-gradient(ellipse 800px 600px at 25% 35%, rgba(100, 50, 140, 0.35), transparent 60%),
+		radial-gradient(ellipse 700px 800px at 75% 25%, rgba(80, 40, 130, 0.3), transparent 55%),
+		radial-gradient(ellipse 600px 500px at 60% 75%, rgba(70, 50, 150, 0.3), transparent 55%),
+		/* Blue-purple blobs */
+		radial-gradient(ellipse 550px 450px at 15% 70%, rgba(60, 60, 160, 0.25), transparent 50%),
+		radial-gradient(ellipse 500px 600px at 85% 60%, rgba(90, 50, 140, 0.28), transparent 50%),
+		/* Pink/magenta accents */
+		radial-gradient(ellipse 450px 350px at 45% 20%, rgba(140, 50, 120, 0.25), transparent 50%),
+		radial-gradient(ellipse 400px 450px at 90% 85%, rgba(120, 40, 100, 0.22), transparent 50%);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	filter: blur(40px);
+}
+
 
 .space-center {
 	position: absolute;

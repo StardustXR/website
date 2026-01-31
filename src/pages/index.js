@@ -80,9 +80,13 @@ export default function Home() {
 		<body>
 			<main>
 				<SpaceViewport
+					backgroundImage="img/home_bg.png"
 					manualCanvasWidth={2000}
 					manualCanvasHeight={2000}
-					style={{ width: "100vw", height: "100vh" }}
+					style={{
+						width: "100vw",
+						height: "100vh",
+					}}
 				>
 					<HeroIsland />
 					<VideoIsland />
